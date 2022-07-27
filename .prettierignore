@@ -1,0 +1,9 @@
+
+*.json
+*.config.js
+*.setup.js
+.next
+.eslintrc
+.prettierrc
+*.md
+next-env.d.ts
