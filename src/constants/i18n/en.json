@@ -1,0 +1,35 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "english": "English",
+        "portuguese": "Português",
+        "spanish": "Español",
+        "german": "Deutsch",
+        "french": "Français"
+    },
+    "home": {
+        "prefix": "Hey there! I am",
+        "title": "Murilo Wolfart",
+        "description": "I'm a <span>front-end</span> developer with experience in <span>ReactJS</span> and <span>NextJS</span>, who loves working in <span>dynamic</span> teams and <span>diverse</span> environments"
+    },
+    "projects": {
+        "title": "Check out some of my projects",
+        "emafy": "Emafy",
+        "emafyDescription": "A spotify wrapper lorem ipsum dolor sit amet.",
+        "portfolio": "Portfolio",
+        "portfolioDescription": "The web page you're currently viewing."
+    },
+    "about": {
+        "title": "About myself",
+        "paragraphOne": "I am a computer scientist graduated in Federal University of Rio Grande do Sul in 2021.",
+        "paragraphTwo": "Although I have experience with many languages and tools, I am currently working in the front-end side of things.",
+        "paragraphThree": "Besides coding, I like sports, music, and video-games"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Below are some links to some of my resources around the internet. Feel free to reach out to me by any of these means!"
+    }
+}
