@@ -10,7 +10,11 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      primary: '#000000',
+      dark: '#26262f',
+      snow: '#f8f9fd',
+      primary: '#edbe11',
+      blue: '#474875',
+      lightblue: '#797bc9',
     },
     fontFamily: {
       opensans: ['OpenSans', 'Arial', 'serif'],
