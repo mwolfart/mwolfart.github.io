@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import Image from 'next/image'
 import { useTranslations } from 'use-intl'
+import { Img } from '@ui-components'
 
 export default function Home(): ReactNode {
   const t = useTranslations('home')
@@ -14,14 +14,7 @@ export default function Home(): ReactNode {
           <span className="text-md text-lightblue">{t('prefix')}</span>
           <h1 className="flex-grow">{t('title')}</h1>
         </div>
-        <div className="relative w-64 h-64">
-          <Image
-            src="/images/computer.png"
-            layout="fill"
-            aria-hidden="true"
-            alt=""
-          />
-        </div>
+        <Img src="/images/computer.png" width={64} height={64} />
       </div>
       <div className="pl-40 pr-24 h-full">
         <p className="text-xl">{description}</p>
