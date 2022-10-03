@@ -20,13 +20,30 @@ module.exports = {
       opensans: ['OpenSans', 'Arial', 'serif'],
     },
     fontSize: {
-      xxl: ['46px', '50px'],
+      '3xl': ['64px', '68px'],
+      '2xl': ['46px', '50px'],
       xl: ['36px', '38px'],
       lg: ['30px', '36px'],
       md: ['24px', '32px'],
       sm: ['17px', '23px'],
     },
-    extend: {},
+    transitionDuration: {
+      DEFAULT: '300ms',
+    },
+    extend: {
+      zIndex: {
+        'bg': '-1',
+      },
+      gridTemplateColumns: {
+        '2-grow-left': 'auto 1fr',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+        addVariant('child', '& > *');
+        addVariant('child-hover', '& > *:hover');
+        addVariant('child-last', '& > *:last-child');
+    }
+],
 }
