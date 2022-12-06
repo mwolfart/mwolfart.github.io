@@ -9,14 +9,16 @@ export default function Home(): ReactNode {
   })
   return (
     <div className="h-screen">
-      <div className="home-shape bg-dark flex flex-row py-24 pl-40 pr-24 mb-32">
-        <div className="pt-8 flex-grow">
-          <span className="text-md text-lightblue">{t('prefix')}</span>
+      <div className="bg-dark flex flex-col items-center p-12 sm:pt-24 md:items-start md:flex-row md:home-title-shape lg:pl-40">
+        <div className="py-8 flex-grow text-center md:pb-0 sm:text-left">
+          <span className="text-sm md:text-md text-lightblue">
+            {t('prefix')}
+          </span>
           <h1 className="flex-grow">{t('title')}</h1>
         </div>
-        <Img src="/images/computer.png" width={64} height={64} />
+        <Img src="/images/computer.png" width="w-64" height="h-64" />
       </div>
-      <div className="pl-40 pr-24 h-full">
+      <div className="relative md:top-24 p-12 sm:p-24 lg:pl-40 md:w-2/3">
         <p className="text-xl">{description}</p>
       </div>
     </div>

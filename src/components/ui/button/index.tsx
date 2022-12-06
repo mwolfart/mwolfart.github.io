@@ -14,7 +14,7 @@ export const Button: FC<Props> = ({
   ...props
 }) => {
   const classes = cx(
-    'transition hover:text-primary text-md px-4 my-4',
+    'transition hover:text-primary text-sm sm:text-md px-4 my-4',
     className,
   )
   return (
