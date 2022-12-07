@@ -1,4 +1,4 @@
-import { Intro, About } from '@feature-components'
+import { Intro, About, Projects } from '@feature-components'
 import { ReactNode } from 'react'
 
 export default function Home(): ReactNode {
@@ -6,6 +6,7 @@ export default function Home(): ReactNode {
     <div className="overflow">
       <Intro />
       <About />
+      <Projects />
     </div>
   )
 }
