@@ -24,9 +24,9 @@
     },
     "about": {
         "title": "About myself",
-        "paragraphOne": "I am a computer scientist graduated in Federal University of Rio Grande do Sul in 2021.",
-        "paragraphTwo": "Although I have experience with many languages and tools, I am currently working in the front-end side of things.",
-        "paragraphThree": "Besides coding, I like sports, music, and video-games"
+        "paragraphOne": "I am a computer scientist and software developer based in Porto Alegre, RS, Brazil. I've been working with development since 2016, but I've had contact with programming languages since I was a child!",
+        "paragraphTwo": "Although I have experience with many languages and tools, I am currently working in the front-end side of things. I have 5+ years of experience with front-end programming, 3+ years of experience with ReactJS and a little more than 1 year of experience with NextJS. Besides these frameworks, I have also worked with Angular, TailwindCSS, MaterialUI, Styled Components, unit testing, among other tools.",
+        "paragraphThree": "Besides coding, I like sports, music, and video-games - mainly metroidvanias and side-scrollers (yes, I am huge Nintendo fan). On weekends I really like to go skating while listening to a good synthpop from the 80s. I also love hiking and exploring the nature."
     },
     "contact": {
         "title": "Contact",

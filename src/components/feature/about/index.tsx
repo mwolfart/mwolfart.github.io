@@ -7,8 +7,8 @@ export const About: FC = () => {
   return (
     <div className="md:pr-24 md:py-12">
       <div className="bg-dark p-8 flex flex-row gap-8">
-        <div className="p-4">
-          <Img src="/images/profile-2x.jpg" width="w-64" height="h-full" />
+        <div className="p-4 border-2 border-primary h-fit">
+          <Img src="/images/profile-2x.jpg" width="w-60" height="h-72" />
         </div>
         <div className="flex flex-col gap-8">
           <h1 className="text-white border-b-2 border-lightblue w-fit pb-8">
