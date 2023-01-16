@@ -8,8 +8,10 @@ import 'styles/globals.css'
 const MyApp = ({ Component, pageProps }: AppProps): ReactNode => {
   return (
     <IntlProvider messages={i18n.en} locale="en">
-      <Header />
-      <Component {...pageProps} />
+      <div className="h-screen flex flex-col">
+        <Header />
+        <Component {...pageProps} />
+      </div>
     </IntlProvider>
   )
 }
