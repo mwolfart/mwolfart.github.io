@@ -10,12 +10,12 @@ interface Props {
 
 export const Img: FC<Props> = ({ src, width, height, alt }) => {
   const classes = `relative ${width} ${height}`
-  console.log(classes)
   return (
     <div className={classes}>
       <Image
+        className="object-cover"
         src={src}
-        layout="fill"
+        fill={true}
         aria-hidden={alt ? 'false' : 'true'}
         alt={alt || ''}
       />

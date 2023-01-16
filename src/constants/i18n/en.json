@@ -18,9 +18,15 @@
     "projects": {
         "title": "Check out some of my projects",
         "emafy": "Emafy",
-        "emafyDescription": "A spotify wrapper lorem ipsum dolor sit amet.",
+        "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
         "portfolio": "Portfolio",
-        "portfolioDescription": "The web page you're currently viewing."
+        "portfolioDescription": "The web page you're currently viewing, which contains information about myself and my curriculum.",
+        "patas": "Patas Dadas Internal Website",
+        "patasDescription": "Legacy website for local NGO Patas Dadas, designed for managament of interal data.",
+        "cow": "The Homogeneous Cow Maze",
+        "cowDescription": "3D Game developed in C++ with OpenGL, inspired by the classic DOS game Chip's Challenge.",
+        "dave": "Dangerous Dave Replica",
+        "daveDescription": "A replica of the 1988 game Dangerous Dave, made in object-oriented & functional Python."
     },
     "about": {
         "title": "About me",

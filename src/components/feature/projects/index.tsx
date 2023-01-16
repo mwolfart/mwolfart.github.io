@@ -7,7 +7,7 @@ export const Projects: FC = () => {
   return (
     <div className="p-8 lg:p-16 flex flex-col gap-16">
       <h2 className="pb-8 border-b-2 border-primary w-fit">{t('title')}</h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-row flex-wrap gap-8">
         <ProjectCard
           imageSrc="/images/emafy.jpg"
           title={t('emafy')}
@@ -17,6 +17,21 @@ export const Projects: FC = () => {
           imageSrc="/images/portfolio.jpg"
           title={t('portfolio')}
           description={t('portfolioDescription')}
+        />
+        <ProjectCard
+          imageSrc="/images/patas.jpg"
+          title={t('patas')}
+          description={t('patasDescription')}
+        />
+        <ProjectCard
+          imageSrc="/images/cow.jpg"
+          title={t('cow')}
+          description={t('cowDescription')}
+        />
+        <ProjectCard
+          imageSrc="/images/dave.jpg"
+          title={t('dave')}
+          description={t('daveDescription')}
         />
       </div>
     </div>
