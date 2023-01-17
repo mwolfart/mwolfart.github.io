@@ -7,7 +7,9 @@ module.exports = {
       sm: '576px',
       md: '768px',
       lg: '976px',
-      xl: '1440px',
+      xl: '1180px',
+      '2xl': '1440px',
+      '3xl': '1680px',
     },
     colors: {
       dark: '#26262f',
@@ -37,6 +39,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         '2-grow-left': 'auto 1fr',
+      },
+      width: {
+        'half-gap-8': 'calc(50% - 32px)',
       }
     },
   },
