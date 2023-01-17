@@ -1,14 +1,14 @@
-import { FC } from 'react'
+import { forwardRef } from 'react'
 import { useTranslations } from 'use-intl'
 import { Img } from '@ui-components'
 
-export const Intro: FC = () => {
+export const Intro = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('home')
   const description = t.rich('description', {
     span: (children) => <span className="text-primary">{children}</span>,
   })
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" ref={ref}>
       <div className="bg-dark flex flex-col items-center p-12 md:pt-24 md:items-start md:flex-row md:home-title-shape lg:pl-40">
         <div className="py-8 flex-grow text-center md:pb-0 sm:text-left">
           <span className="text-sm md:text-md text-lightblue">
@@ -27,4 +27,4 @@ export const Intro: FC = () => {
       </div>
     </div>
   )
-}
+})

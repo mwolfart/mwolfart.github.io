@@ -1,9 +1,11 @@
-import { FC } from 'react'
+import { forwardRef } from 'react'
 import { useTranslations } from 'use-intl'
 import { ContactCard } from '../contact-card'
 import { BsLinkedin, BsGithub, BsArrowUp } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { Button } from '@ui-components'
+import { useContext } from 'react'
+import { ScrollContext } from '@providers'
 
 const urls = {
   linkedin: {
@@ -20,17 +22,18 @@ const urls = {
   },
 }
 
-export const Contact: FC = () => {
+export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('contact')
+  const { scrollTo } = useContext(ScrollContext)
   return (
-    <div>
+    <div ref={ref}>
       <div className="md:pl-24 md:py-12">
-        <div className="bg-dark p-8 md:p-16 flex flex-col gap-8">
+        <div className="bg-dark p-8 md:p-16 xl:pr-64 flex flex-col gap-8">
           <h1 className="text-primary border-b-2 border-lightblue w-fit pb-8">
             {t('title')}
           </h1>
           <p className="text-md">{t('description')}</p>
-          <div className="flex flex-row flex-wrap">
+          <div className="flex flex-row flex-wrap justify-around w-3/4">
             <ContactCard
               title={t('linkedin')}
               urlText={urls.linkedin.text}
@@ -53,11 +56,11 @@ export const Contact: FC = () => {
         </div>
       </div>
       <div className="mb-8 text-center">
-        <Button className="text-primary font-bold hover:text-lightblue">
+        <Button className="font-bold" onClick={() => scrollTo(0)}>
           <BsArrowUp size={32} className="w-fit mx-auto mb-2" />
           {t('back-to-top')}
         </Button>
       </div>
     </div>
   )
-}
+})

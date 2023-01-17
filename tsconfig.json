@@ -26,6 +26,7 @@
       "paths": {
         "@feature-components": ["src/components/feature/index.ts"],
         "@ui-components": ["src/components/ui/index.ts"],
+        "@providers": ["src/providers/index.ts"],
         "@constants": ["src/constants/index.ts"],
       }
     },

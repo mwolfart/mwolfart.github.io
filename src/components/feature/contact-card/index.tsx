@@ -13,7 +13,7 @@ export const ContactCard: FC<Props> = ({
   url,
   urlText,
 }) => (
-  <div className="w-full md:w-1/3 px-16">
+  <div>
     <a
       href={url}
       target="_blank"

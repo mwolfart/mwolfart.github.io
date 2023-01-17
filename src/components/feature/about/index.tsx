@@ -1,8 +1,8 @@
-import { FC } from 'react'
+import { forwardRef } from 'react'
 import { useTranslations } from 'use-intl'
 import { Img } from '@ui-components'
 
-export const About: FC = () => {
+export const About = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('about')
   const Title = (
     <h1 className="text-white border-b-2 border-lightblue w-fit pb-8">
@@ -10,7 +10,7 @@ export const About: FC = () => {
     </h1>
   )
   return (
-    <div className="md:pr-24 md:py-12">
+    <div className="md:pr-24 md:py-12" ref={ref}>
       <div className="bg-dark p-8 md:p-16 flex flex-col lg:flex-row gap-8">
         <div className="lg:hidden self-center">{Title}</div>
         <div className="p-4 my-4 border-2 border-primary self-center h-fit w-fit lg:self-start lg:my-0">
@@ -25,4 +25,4 @@ export const About: FC = () => {
       </div>
     </div>
   )
-}
+})

@@ -1,11 +1,11 @@
-import { FC } from 'react'
+import { forwardRef } from 'react'
 import { useTranslations } from 'use-intl'
 import { ProjectCard } from '@feature-components'
 
-export const Projects: FC = () => {
+export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('projects')
   return (
-    <div className="p-8 lg:p-16 flex flex-col gap-16">
+    <div className="p-8 lg:p-16 flex flex-col gap-16" ref={ref}>
       <h2 className="pb-8 border-b-2 border-primary w-fit">{t('title')}</h2>
       <div className="flex flex-row flex-wrap gap-8">
         <ProjectCard
@@ -36,4 +36,4 @@ export const Projects: FC = () => {
       </div>
     </div>
   )
-}
+})

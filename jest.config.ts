@@ -14,6 +14,7 @@ const customJestConfig = {
   moduleNameMapper: {
     '@feature-components': '<rootDir>/src/components/feature/index.ts',
     '@ui-components': '<rootDir>/src/components/ui/index.ts',
+    '@providers': '<rootDir>/src/providers/index.ts',
     '@constants': '<rootDir>/src/constants/index.ts',
   },
   testEnvironment: 'jest-environment-jsdom',
