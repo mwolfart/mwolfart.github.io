@@ -15,6 +15,7 @@ module.exports = {
       primary: '#edbe11',
       blue: '#474875',
       lightblue: '#797bc9',
+      transparent: '#00000000'
     },
     fontFamily: {
       opensans: ['OpenSans', 'Arial', 'serif'],

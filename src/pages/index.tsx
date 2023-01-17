@@ -1,4 +1,4 @@
-import { Intro, About, Projects } from '@feature-components'
+import { Intro, About, Projects, Contact } from '@feature-components'
 import { ReactNode } from 'react'
 
 export default function Home(): ReactNode {
@@ -7,6 +7,7 @@ export default function Home(): ReactNode {
       <Intro />
       <About />
       <Projects />
+      <Contact />
     </div>
   )
 }

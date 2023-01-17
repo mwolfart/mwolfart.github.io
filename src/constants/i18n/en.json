@@ -36,6 +36,11 @@
     },
     "contact": {
         "title": "Contact",
-        "description": "Below are some links to some of my resources around the internet. Feel free to reach out to me by any of these means!"
+        "description": "Below are the links to some of my resources around the internet. Feel free to reach out to me by any of these means!",
+        "resume": "Are you hiring? You can <a>download my résumé here</a>!",
+        "linkedin": "LinkedIn",
+        "github": "Github",
+        "email": "E-mail",
+        "back-to-top": "Back to top"
     }
 }
