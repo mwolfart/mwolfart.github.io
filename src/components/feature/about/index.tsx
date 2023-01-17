@@ -5,9 +5,9 @@ import { Img } from '@ui-components'
 export const About = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('about')
   const Title = (
-    <h1 className="text-white border-b-2 border-lightblue w-fit pb-8">
+    <h2 className="text-white border-b-2 border-lightblue w-fit pb-8">
       {t('title')}
-    </h1>
+    </h2>
   )
   return (
     <div className="md:pr-24 md:py-12" ref={ref}>

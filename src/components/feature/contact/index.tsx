@@ -27,7 +27,7 @@ export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
   const { scrollTo } = useContext(ScrollContext)
   return (
     <div ref={ref}>
-      <div className="md:pl-24 md:py-12">
+      <div className="md:pl-24 md:pt-12 md:pb-4 3xl:pb-12">
         <div className="bg-dark p-8 md:p-16 xl:pr-64 flex flex-col gap-8">
           <h1 className="text-primary border-b-2 border-lightblue w-fit pb-8">
             {t('title')}
