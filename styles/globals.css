@@ -37,7 +37,7 @@
   h4 {
     @apply text-md md:text-lg;
   }
-  
+
   h5 {
     @apply text-sm md:text-md;
   }
