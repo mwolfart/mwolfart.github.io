@@ -17,8 +17,10 @@
     },
     "projects": {
         "title": "Check out some of my projects",
+        "technologiesUsed": "Technologies used",
         "emafy": "Emafy",
         "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
+        "emafyLongDescription": "",
         "portfolio": "Portfolio",
         "portfolioDescription": "The web page you're currently viewing, which contains information about myself and my curriculum.",
         "patas": "Patas Dadas Internal Website",
@@ -26,7 +28,26 @@
         "cow": "The Homogeneous Cow Maze",
         "cowDescription": "3D Game developed in C++ with OpenGL, inspired by the classic DOS game Chip's Challenge.",
         "dave": "Dangerous Dave Replica",
-        "daveDescription": "A replica of the 1988 game Dangerous Dave, made in object-oriented & functional Python."
+        "daveDescription": "A replica of the 1988 game Dangerous Dave, made in object-oriented & functional Python.",
+        "tech": {
+            "cpp": "C++",
+            "python": "Python",
+            "javascript": "Javascript",
+            "java": "Java",
+            "react": "ReactJS",
+            "opengl": "OpenGL",
+            "unity": "Unity",
+            "tailwind": "TailwindCSS",
+            "cssmodules": "CSS Modules",
+            "jest": "Jest",
+            "bootstrap": "Bootstrap",
+            "jquery": "JQuery",
+            "sass": "Sass",
+            "styled": "Styled Components",
+            "postgres": "PostgreSQL",
+            "next": "NextJS",
+            "cra": "Create React App"
+        }
     },
     "about": {
         "title": "About me",
