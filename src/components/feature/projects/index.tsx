@@ -1,6 +1,7 @@
 import { forwardRef, ReactNode, useState } from 'react'
 import { useTranslations } from 'use-intl'
 import { ProjectCard } from '@feature-components'
+import { EmafyDetails } from './emafy'
 import cx from 'classnames'
 
 export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
@@ -8,21 +9,30 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const [showDetails, setShowDetails] = useState(false)
   const [detailsContent, setDetailsContent] = useState<ReactNode>()
 
+  const detailsElements = [<EmafyDetails key={0} />]
+
   const onOpenDetails = (id: number): void => {
-    setDetailsContent(<></>)
-    setShowDetails(true)
+    if (id < detailsElements.length) {
+      setDetailsContent(detailsElements[id])
+      setShowDetails(true)
+    }
   }
 
   const detailsWrapperClasses = cx(
-    'absolute transition inset-0',
-    !showDetails && 'left-full',
+    'absolute transition w-full top-0 bottom-0 bg-lightblue z-10 left-0',
+    !showDetails && 'translate-x-[2000px]',
   )
 
   return (
     <div className="p-8 sm:p-16 flex flex-col gap-16" ref={ref}>
       <h2 className="pb-8 border-b-2 border-primary w-fit">{t('title')}</h2>
-      <div className="realtive flex flex-row flex-wrap gap-8">
-        <div className={detailsWrapperClasses}>{detailsContent}</div>
+      <div className="relative flex flex-row flex-wrap gap-8">
+        <div
+          className={detailsWrapperClasses}
+          onClick={() => setShowDetails(false)}
+        >
+          {detailsContent}
+        </div>
         <ProjectCard
           imageSrc="/images/emafy.jpg"
           title={t('emafy')}

@@ -46,7 +46,9 @@
             "styled": "Styled Components",
             "postgres": "PostgreSQL",
             "next": "NextJS",
-            "cra": "Create React App"
+            "cra": "Create React App",
+            "ts": "Typescript",
+            "prettier": "Prettier"
         }
     },
     "about": {

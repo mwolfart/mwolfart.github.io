@@ -6,13 +6,20 @@ export const EmafyDetails: FC = () => {
   const technologies = [
     t('tech.react'),
     t('tech.styled'),
-    t('tech.cra'),
+    t('tech.ts'),
+    t('tech.prettier'),
     t('tech.jest'),
+    t('tech.cra'),
   ]
   return (
-    <div>
+    <div className="p-16">
       <p>{t('emafyLongDescription')}</p>
       <h4>{t('technologiesUsed')}</h4>
+      <ul>
+        {technologies.map((name) => (
+          <li key={name}>{name}</li>
+        ))}
+      </ul>
     </div>
   )
 }
