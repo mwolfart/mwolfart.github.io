@@ -4,13 +4,17 @@ import { ProjectCard } from '@feature-components'
 import { EmafyDetails } from './emafy'
 import cx from 'classnames'
 import { Button } from '@ui-components'
+import { PortfolioDetails } from './portfolio'
 
 export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('projects')
   const [showDetails, setShowDetails] = useState(false)
   const [detailsContent, setDetailsContent] = useState<ReactNode>()
 
-  const detailsElements = [<EmafyDetails key={0} />]
+  const detailsElements = [
+    <EmafyDetails key={0} />,
+    <PortfolioDetails key={1} />,
+  ]
 
   const onOpenDetails = (id: number): void => {
     if (id < detailsElements.length) {
