@@ -20,7 +20,9 @@
         "technologiesUsed": "Technologies used",
         "emafy": "Emafy",
         "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
-        "emafyLongDescription": "",
+        "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.", 
+        "emafyP2": "The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.",
+        "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
         "portfolio": "Portfolio",
         "portfolioDescription": "The web page you're currently viewing, which contains information about myself and my curriculum.",
         "patas": "Patas Dadas Internal Website",
@@ -29,6 +31,7 @@
         "cowDescription": "3D Game developed in C++ with OpenGL, inspired by the classic DOS game Chip's Challenge.",
         "dave": "Dangerous Dave Replica",
         "daveDescription": "A replica of the 1988 game Dangerous Dave, made in object-oriented & functional Python.",
+        "close": "Close",
         "tech": {
             "cpp": "C++",
             "python": "Python",

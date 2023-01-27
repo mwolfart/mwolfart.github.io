@@ -42,6 +42,17 @@
     @apply text-sm md:text-md;
   }
 
+  ul {
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  ul li::marker {
+    @apply text-primary;
+  }
+
   @media (prefers-color-scheme: dark) {
   }
 }
