@@ -83,11 +83,10 @@ jobs:
       - name: Add nojekyll
         run: touch ./out/.nojekyll
       - name: Deploy
-        run: ${{ steps.detect-package-manager.outputs.runner }} deploy
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          path: ./out
+          branch: gh-pages
+          folder: out
 
   # Deployment job
   deploy:
