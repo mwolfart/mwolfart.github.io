@@ -17,9 +17,12 @@ const Icon: FC<IconProps> = ({ country, onClick }) => {
     fr: <FR title="FR" />,
   }
   return (
-    <div className="w-12 cursor-pointer" onClick={onClick}>
+    <button
+      className="w-12 cursor-pointer flex flex-col justify-center"
+      onClick={onClick}
+    >
       {flags[country]}
-    </div>
+    </button>
   )
 }
 
