@@ -42,7 +42,7 @@ module.exports = {
       },
       width: {
         'half-gap-8': 'calc(50% - 32px)',
-      }
+      },
     },
   },
   plugins: [
