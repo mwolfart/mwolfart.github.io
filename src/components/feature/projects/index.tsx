@@ -53,31 +53,31 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="relative flex flex-row flex-wrap gap-8">
         {DetailsDialog}
         <ProjectCard
-          imageSrc="/images/emafy.jpg"
+          imageSrc={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/emafy.jpg`}
           title={t('emafy')}
           description={t('emafyDescription')}
           onClick={() => onOpenDetails(0)}
         />
         <ProjectCard
-          imageSrc="/images/portfolio.jpg"
+          imageSrc={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/portfolio.jpg`}
           title={t('portfolio')}
           description={t('portfolioDescription')}
           onClick={() => onOpenDetails(1)}
         />
         <ProjectCard
-          imageSrc="/images/patas.jpg"
+          imageSrc={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/patas.jpg`}
           title={t('patas')}
           description={t('patasDescription')}
           onClick={() => onOpenDetails(2)}
         />
         <ProjectCard
-          imageSrc="/images/cow.jpg"
+          imageSrc={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/cow.jpg`}
           title={t('cow')}
           description={t('cowDescription')}
           onClick={() => onOpenDetails(3)}
         />
         <ProjectCard
-          imageSrc="/images/dave.jpg"
+          imageSrc={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/dave.jpg`}
           title={t('dave')}
           description={t('daveDescription')}
           onClick={() => onOpenDetails(4)}

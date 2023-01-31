@@ -17,7 +17,7 @@ export const Intro = forwardRef<HTMLDivElement>((_, ref) => {
           <h1 className="flex-grow">{t('title')}</h1>
         </div>
         <Img
-          src="/images/computer.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/computer.png`}
           width="w-32 sm:w-64"
           height="h-32 sm:h-64"
         />

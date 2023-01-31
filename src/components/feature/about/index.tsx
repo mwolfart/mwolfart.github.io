@@ -14,7 +14,11 @@ export const About = forwardRef<HTMLDivElement>((_, ref) => {
       <div className="bg-dark p-8 md:p-16 flex flex-col lg:flex-row gap-8">
         <div className="lg:hidden self-center">{Title}</div>
         <div className="p-4 my-4 border-2 border-primary self-center h-fit w-fit lg:self-start lg:my-0">
-          <Img src="/images/profile-2x.jpg" width="w-60" height="h-72" />
+          <Img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/profile-2x.jpg`}
+            width="w-60"
+            height="h-72"
+          />
         </div>
         <div className="flex flex-col gap-8">
           <div className="hidden lg:block">{Title}</div>

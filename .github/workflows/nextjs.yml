@@ -27,6 +27,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /portfolio
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -82,11 +84,10 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Add nojekyll
         run: touch ./out/.nojekyll
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          branch: gh-pages
-          folder: out
+          path: ./out
 
   # Deployment job
   deploy:
