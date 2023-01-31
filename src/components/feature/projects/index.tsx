@@ -5,6 +5,9 @@ import { EmafyDetails } from './emafy'
 import cx from 'classnames'
 import { Button } from '@ui-components'
 import { PortfolioDetails } from './portfolio'
+import { PatasDetails } from './patas'
+import { CowDetails } from './cow'
+import { DaveDetails } from './dave'
 
 export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('projects')
@@ -14,6 +17,9 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const detailsElements = [
     <EmafyDetails key={0} />,
     <PortfolioDetails key={1} />,
+    <PatasDetails key={2} />,
+    <CowDetails key={3} />,
+    <DaveDetails key={4} />,
   ]
 
   const onOpenDetails = (id: number): void => {
