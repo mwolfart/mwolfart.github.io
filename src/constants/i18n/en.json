@@ -4,11 +4,12 @@
         "projects": "Projects",
         "about": "About",
         "contact": "Contact",
+        "change-language": "Change language",
         "en": "English",
-        "pt-BR": "Português",
-        "es": "Español",
-        "de": "Deutsch",
-        "fr": "Français"
+        "pt-BR": "Portuguese",
+        "es": "Spanish",
+        "de": "German",
+        "fr": "French"
     },
     "home": {
         "prefix": "Hey there! I am",

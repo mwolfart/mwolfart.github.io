@@ -2,13 +2,15 @@ import { Language, LanguageContext } from '@providers'
 import { US, BR, ES, DE, FR } from 'country-flag-icons/react/3x2'
 import { FC, useContext, useState } from 'react'
 import cx from 'classnames'
+import { useTranslations } from 'use-intl'
 
 interface IconProps {
   country: Language
   onClick: () => void
+  ariaLabel: string
 }
 
-const Icon: FC<IconProps> = ({ country, onClick }) => {
+const Icon: FC<IconProps> = ({ country, onClick, ariaLabel }) => {
   const flags = {
     en: <US title="US" />,
     'pt-BR': <BR title="BR" />,
@@ -20,6 +22,7 @@ const Icon: FC<IconProps> = ({ country, onClick }) => {
     <button
       className="w-12 cursor-pointer flex flex-col justify-center"
       onClick={onClick}
+      aria-label={ariaLabel}
     >
       {flags[country]}
     </button>
@@ -29,6 +32,7 @@ const Icon: FC<IconProps> = ({ country, onClick }) => {
 export const LanguageSelector: FC = () => {
   const [showLanguages, setShowLanguages] = useState(false)
   const { language, setLanguage } = useContext(LanguageContext)
+  const t = useTranslations('header')
 
   const langs: Array<Language> = ['en', 'pt-BR']
   const selectLanguage = (lang: Language): void => {
@@ -53,13 +57,22 @@ export const LanguageSelector: FC = () => {
 
   const Current = (
     <div className={currentClasses}>
-      <Icon country={language} onClick={() => setShowLanguages(true)} />
+      <Icon
+        country={language}
+        onClick={() => setShowLanguages(true)}
+        ariaLabel={t('change-language')}
+      />
     </div>
   )
   const Flags = (
     <div className={flagsClasses}>
       {langs.map((lang) => (
-        <Icon key={lang} country={lang} onClick={() => selectLanguage(lang)} />
+        <Icon
+          key={lang}
+          country={lang}
+          onClick={() => selectLanguage(lang)}
+          ariaLabel={t(lang)}
+        />
       ))}
     </div>
   )
