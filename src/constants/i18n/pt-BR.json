@@ -1,0 +1,83 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Projetos",
+        "about": "Sobre",
+        "contact": "Contato",
+        "english": "Inglês",
+        "portuguese": "Português",
+        "spanish": "Espanhol",
+        "german": "Alemão",
+        "french": "Francês"
+    },
+    "home": {
+        "prefix": "Olá! Eu sou",
+        "title": "Murilo Wolfart",
+        "description": "Sou um programador <span>front-end</span> com experiência em <span>ReactJS</span> e <span>NextJS</span>, que adora trabalhar em times <span>dinâmicos</span> e espaços <span>diversos</span>."
+    },
+    "projects": {
+        "title": "Veja alguns projetos meus",
+        "technologiesUsed": "Tecnologias utilizadas",
+        "emafy": "Emafy",
+        "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
+        "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.", 
+        "emafyP2": "The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.",
+        "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
+        "portfolio": "Portfolio",
+        "portfolioDescription": "The web page you're currently viewing, which contains information about myself and my curriculum.",
+        "portfolioP1": "This portfolio was designed using a layout of my own. Even though the website is quite simple, it's built using NextJS, since it's a practical framework and I was already used to it. The main goal here is to showcase my products and provide more information about me.",
+        "patas": "Patas Dadas Internal Website",
+        "patasDescription": "Legacy website for local NGO Patas Dadas, designed for managament of interal data.",
+        "patasP1": "This project was designed initially as a college assignment. It was supposed to be an internal system for the local NGO Patas Dadas, in order for them to manage internal data such as animals available for adoption, resources, food, etc.",
+        "patasP2": "The project was built along with two other colleagues of mine, and the front-end used jQuery, plain HTML and Bootstrap, while the back-end used a Java server and a database in PostgreSQL.",
+        "patasP3": "In the end the project was deprecated, and entered a legacy state.",
+        "cow": "The Homogeneous Cow Maze",
+        "cowDescription": "3D Game developed in C++ with OpenGL, inspired by the classic DOS game Chip's Challenge.",
+        "cowP1": "This is a 3D game developed using C++ and the OpenGL library. It is the final part of a set of college assignments made in order to study computer graphics concepts.",
+        "cowP2": "The game is heavily inspired by the 1989 game Chip's Challenge, using the same logic in a 3D space. The player has to collect baby cows scattered across each level and bring them to their parent in order to exit the level. One of the requirements of the assignment was to use a cow 3D model, hence the name of the game.",
+        "cowP3": "It contains 5 levels with different themes and music. Multiple technologies and libraries were used in order to assemble it. More details can be found on the project's repository.",
+        "dave": "Dangerous Dave Replica",
+        "daveDescription": "A replica of the 1988 game Dangerous Dave, made in object-oriented & functional Python.",
+        "daveP1": "This project is a replica of the 1988 game Dangerous Dave, which was developed by Id Software. This replica is almost identical to the original, with exception that it does not contain any enemies.",
+        "daveP2": "The project was developed as a college assignment, where the goal was to study the different programming paradigms in one language: structured, OO and functional. From a list of multiple programming languages to be used, Python was the one chosen by the group.",
+        "daveP3": "Therefore, there is one portion of the project that uses OO to run the application, and another that uses the functional paradigm. More details on the project can be found in the project's repository.",
+        "viewRepo": "You can view the project's repository <a>here</a>.",
+        "close": "Fechar",
+        "tech": {
+            "cpp": "C++",
+            "python": "Python",
+            "javascript": "Javascript",
+            "java": "Java",
+            "react": "ReactJS",
+            "opengl": "OpenGL",
+            "unity": "Unity",
+            "tailwind": "TailwindCSS",
+            "cssmodules": "CSS Modules",
+            "jest": "Jest",
+            "bootstrap": "Bootstrap",
+            "jquery": "JQuery",
+            "sass": "Sass",
+            "styled": "Styled Components",
+            "postgres": "PostgreSQL",
+            "next": "NextJS",
+            "cra": "Create React App",
+            "parcel": "Parcel",
+            "ts": "Typescript",
+            "prettier": "Prettier"
+        }
+    },
+    "about": {
+        "title": "Sobre mim",
+        "paragraphOne": "I am a computer scientist and software developer based in Porto Alegre, RS, Brazil. I've been working with development since 2016, but I've had contact with programming languages since I was a child!",
+        "paragraphTwo": "Although I have experience with many languages and tools, I am currently working in the front-end side of things. I have 5+ years of experience with front-end programming, 3+ years of experience with ReactJS and a little more than 1 year of experience with NextJS. Besides these frameworks, I have also worked with Angular, TailwindCSS, MaterialUI, Styled Components, unit testing, among other tools.",
+        "paragraphThree": "Besides coding, I like sports, music, and video-games - mainly metroidvanias and side-scrollers (yes, I am huge Nintendo fan). On weekends I really like to go skating while listening to a good synthpop from the 80s. I also love hiking and exploring the nature."
+    },
+    "contact": {
+        "title": "Contato",
+        "description": "Abaixo seguem alguns links para algumas redes minhas na internet. Sinta-se à vontade para falar comigo através de qualquer um deles!",
+        "linkedin": "LinkedIn",
+        "github": "Github",
+        "email": "E-mail",
+        "back-to-top": "Voltar ao topo"
+    }
+}

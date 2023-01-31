@@ -17,7 +17,7 @@ export const LanguageContext = createContext(defaultValue)
 const getLang = (lang: Language): typeof i18n.en => {
   switch (lang) {
     case 'pt-BR':
-      return i18n.en
+      return i18n['pt-BR']
     case 'en':
     default:
       return i18n.en
