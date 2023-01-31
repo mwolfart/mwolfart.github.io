@@ -1,5 +1,5 @@
 import { Language, LanguageContext } from '@providers'
-import { US, BR, ES, DE } from 'country-flag-icons/react/3x2'
+import { US, BR, ES, DE, FR } from 'country-flag-icons/react/3x2'
 import { FC, useContext, useState } from 'react'
 import cx from 'classnames'
 
@@ -14,6 +14,7 @@ const Icon: FC<IconProps> = ({ country, onClick }) => {
     'pt-BR': <BR title="BR" />,
     es: <ES title="ES" />,
     de: <DE title="DE" />,
+    fr: <FR title="FR" />,
   }
   return (
     <div className="w-12 cursor-pointer" onClick={onClick}>
@@ -26,7 +27,7 @@ export const LanguageSelector: FC = () => {
   const [showLanguages, setShowLanguages] = useState(false)
   const { language, setLanguage } = useContext(LanguageContext)
 
-  const langs: Array<Language> = ['en', 'pt-BR', 'es', 'de']
+  const langs: Array<Language> = ['en', 'pt-BR']
   const selectLanguage = (lang: Language): void => {
     setLanguage(lang)
     setShowLanguages(false)

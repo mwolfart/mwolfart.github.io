@@ -2,7 +2,7 @@ import { createContext, FC, PropsWithChildren, useState } from 'react'
 import { IntlProvider } from 'use-intl'
 import { i18n } from '@constants'
 
-export type Language = 'en' | 'pt-BR' | 'es' | 'de'
+export type Language = 'en' | 'pt-BR' | 'es' | 'de' | 'fr'
 
 const defaultValue: {
   language: Language
