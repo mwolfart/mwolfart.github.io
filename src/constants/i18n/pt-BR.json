@@ -18,6 +18,7 @@
     },
     "projects": {
         "title": "Veja alguns projetos meus",
+        "view-details": "Ver detalhes",
         "technologiesUsed": "Tecnologias utilizadas",
         "emafy": "Emafy",
         "emafyDescription": "Um wrapper de Spotify personalizado em que o usuário pode ouvir músicas e pesquisar mídias.",

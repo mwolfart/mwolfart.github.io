@@ -18,6 +18,7 @@
     },
     "projects": {
         "title": "Check out some of my projects",
+        "view-details": "View details",
         "technologiesUsed": "Technologies used",
         "emafy": "Emafy",
         "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
