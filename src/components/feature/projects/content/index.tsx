@@ -1,0 +1,5 @@
+export { CowDetails } from './cow'
+export { DaveDetails } from './dave'
+export { EmafyDetails } from './emafy'
+export { PortfolioDetails } from './portfolio'
+export { PatasDetails } from './patas'

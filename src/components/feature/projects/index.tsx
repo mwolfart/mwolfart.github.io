@@ -1,13 +1,15 @@
 import { forwardRef, ReactNode, useState } from 'react'
 import { useTranslations } from 'use-intl'
 import { ProjectCard } from '@feature-components'
-import { EmafyDetails } from './emafy'
 import cx from 'classnames'
 import { Button } from '@ui-components'
-import { PortfolioDetails } from './portfolio'
-import { PatasDetails } from './patas'
-import { CowDetails } from './cow'
-import { DaveDetails } from './dave'
+import {
+  CowDetails,
+  DaveDetails,
+  EmafyDetails,
+  PatasDetails,
+  PortfolioDetails,
+} from './content'
 
 export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('projects')
