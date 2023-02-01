@@ -7,7 +7,7 @@ interface Props extends PropsWithChildren {
   repoUrl: string
 }
 
-export const ProjectDetails: FC<Props> = ({
+export const DetailsWrapper: FC<Props> = ({
   title,
   technologies,
   repoUrl,

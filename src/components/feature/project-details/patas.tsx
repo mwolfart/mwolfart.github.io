@@ -1,7 +1,7 @@
 import { repositories } from '@constants'
 import { FC } from 'react'
 import { useTranslations } from 'use-intl'
-import { ProjectDetails } from '../details'
+import { DetailsWrapper } from './wrapper'
 
 export const PatasDetails: FC = () => {
   const t = useTranslations('projects')
@@ -12,7 +12,7 @@ export const PatasDetails: FC = () => {
     t('tech.java'),
   ]
   return (
-    <ProjectDetails
+    <DetailsWrapper
       title={t('patas')}
       technologies={technologies}
       repoUrl={repositories.patas}
@@ -20,6 +20,6 @@ export const PatasDetails: FC = () => {
       <p>{t('patasP1')}</p>
       <p>{t('patasP2')}</p>
       <p>{t('patasP3')}</p>
-    </ProjectDetails>
+    </DetailsWrapper>
   )
 }

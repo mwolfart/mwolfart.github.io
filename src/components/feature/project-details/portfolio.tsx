@@ -1,7 +1,7 @@
 import { repositories } from '@constants'
 import { FC } from 'react'
 import { useTranslations } from 'use-intl'
-import { ProjectDetails } from '../details'
+import { DetailsWrapper } from './wrapper'
 
 export const PortfolioDetails: FC = () => {
   const t = useTranslations('projects')
@@ -13,12 +13,12 @@ export const PortfolioDetails: FC = () => {
     t('tech.prettier'),
   ]
   return (
-    <ProjectDetails
+    <DetailsWrapper
       title={t('portfolio')}
       technologies={technologies}
       repoUrl={repositories.portfolio}
     >
       <p>{t('portfolioP1')}</p>
-    </ProjectDetails>
+    </DetailsWrapper>
   )
 }

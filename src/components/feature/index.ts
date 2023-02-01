@@ -6,3 +6,5 @@ export { Contact } from './contact'
 
 export { ProjectCard } from './project-card'
 export { ContactCard } from './contact-card'
+
+export * from './project-details'

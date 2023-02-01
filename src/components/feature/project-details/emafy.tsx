@@ -1,7 +1,7 @@
 import { repositories } from '@constants'
 import { FC } from 'react'
 import { useTranslations } from 'use-intl'
-import { ProjectDetails } from '../details'
+import { DetailsWrapper } from './wrapper'
 
 export const EmafyDetails: FC = () => {
   const t = useTranslations('projects')
@@ -15,7 +15,7 @@ export const EmafyDetails: FC = () => {
     t('tech.parcel'),
   ]
   return (
-    <ProjectDetails
+    <DetailsWrapper
       title={t('emafy')}
       technologies={technologies}
       repoUrl={repositories.emafy}
@@ -23,6 +23,6 @@ export const EmafyDetails: FC = () => {
       <p>{t('emafyP1')}</p>
       <p>{t('emafyP2')}</p>
       <p>{t('emafyP3')}</p>
-    </ProjectDetails>
+    </DetailsWrapper>
   )
 }
