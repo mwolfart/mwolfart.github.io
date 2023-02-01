@@ -8,9 +8,10 @@ interface IconProps {
   country: Language
   onClick: () => void
   ariaLabel: string
+  preventTab?: boolean
 }
 
-const Icon: FC<IconProps> = ({ country, onClick, ariaLabel }) => {
+const Icon: FC<IconProps> = ({ country, onClick, ariaLabel, preventTab }) => {
   const flags = {
     en: <US title="US" />,
     'pt-BR': <BR title="BR" />,
@@ -20,9 +21,10 @@ const Icon: FC<IconProps> = ({ country, onClick, ariaLabel }) => {
   }
   return (
     <button
-      className="w-12 cursor-pointer flex flex-col justify-center"
+      className="w-10 sm:w-12 cursor-pointer flex flex-col justify-center"
       onClick={onClick}
       aria-label={ariaLabel}
+      tabIndex={preventTab ? -1 : 0}
     >
       {flags[country]}
     </button>
@@ -61,6 +63,7 @@ export const LanguageSelector: FC = () => {
         country={language}
         onClick={() => setShowLanguages(true)}
         ariaLabel={t('change-language')}
+        preventTab={showLanguages}
       />
     </div>
   )
@@ -72,6 +75,7 @@ export const LanguageSelector: FC = () => {
           country={lang}
           onClick={() => selectLanguage(lang)}
           ariaLabel={t(lang)}
+          preventTab={!showLanguages}
         />
       ))}
     </div>
@@ -79,8 +83,8 @@ export const LanguageSelector: FC = () => {
 
   return (
     <div className={wrapperClasses}>
-      {Flags}
       {Current}
+      {Flags}
     </div>
   )
 }

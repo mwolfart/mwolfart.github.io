@@ -23,6 +23,7 @@ export const ScrollProvider: FC<PropsWithChildren> = ({ children }) => {
       const targetRef = refs[id]
       if (targetRef != null) {
         targetRef.current?.scrollIntoView()
+        targetRef.current?.focus()
       }
     }
   }

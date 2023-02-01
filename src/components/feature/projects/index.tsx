@@ -30,13 +30,16 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   }
 
   const detailsWrapperClasses = cx(
-    'absolute transition w-full top-0 bottom-0 bg-lightblue z-10 left-0 flex flex-col p-16',
-    !showDetails && 'translate-x-[2000px]',
+    'fixed md:absolute transition top-0 bottom-0 w-full bg-lightblue z-10 left-0 flex flex-col md:p-16',
+    !showDetails &&
+      'translate-x-[600px] sm:translate-x-[1200px] md:translate-x-[2000px]',
   )
 
   const DetailsDialog = (
     <div className={detailsWrapperClasses}>
-      <div className="flex-grow">{detailsContent}</div>
+      <div className="flex-grow p-10 md:p-0 overflow-y-auto">
+        {detailsContent}
+      </div>
       <Button
         variant="outlined"
         className="mx-auto"

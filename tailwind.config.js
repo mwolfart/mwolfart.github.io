@@ -34,12 +34,6 @@ module.exports = {
       DEFAULT: '300ms',
     },
     extend: {
-      zIndex: {
-        'bg': '-1',
-      },
-      gridTemplateColumns: {
-        '2-grow-left': 'auto 1fr',
-      },
       width: {
         'half-gap-8': 'calc(50% - 32px)',
       },
