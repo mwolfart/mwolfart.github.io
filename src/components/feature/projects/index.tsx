@@ -47,11 +47,6 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
     <div className="p-8 sm:p-16 flex flex-col gap-16" ref={ref}>
       <h2 className="pb-8 border-b-2 border-primary w-fit">{t('title')}</h2>
       <div className="relative flex flex-row flex-wrap gap-8">
-        <ProjectDetailsDialog
-          content={detailsContent}
-          isOpen={showDetails}
-          onClose={() => setShowDetails(false)}
-        />
         {projects.map(({ id, name, title, desc }) => (
           <ProjectCard
             key={id}
@@ -59,8 +54,14 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
             title={title}
             description={desc}
             onClick={() => onOpenDetails(id)}
+            disableNavigation={showDetails}
           />
         ))}
+        <ProjectDetailsDialog
+          content={detailsContent}
+          isOpen={showDetails}
+          onClose={() => setShowDetails(false)}
+        />
       </div>
     </div>
   )
