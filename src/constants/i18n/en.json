@@ -25,6 +25,11 @@
         "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.", 
         "emafyP2": "The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.",
         "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
+        "expensable": "Expensable",
+        "expensableDescription": "An online expense management tool designed to keep track of money and financial goals.",
+        "expensableP1": "This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.",
+        "expensableP2": "The project was designed using Remix, Prisma, MongoDB and TailwindCSS. The main goals here were to A) replace a set of spreadsheets I was using to keep track of my expenses and B) learn Remix and acquire a little bit of experience with MongoDB.",
+        "expensableP3": "The status of the project is currently in progress. A few screens are finished but there are more features that need to be finished, and there is also a little bit of technical debt that needs to be addressed",
         "portfolio": "Portfolio",
         "portfolioDescription": "The web page you're currently viewing, which contains information about me and my projects.",
         "portfolioP1": "This portfolio was designed using a layout of my own. Even though the website is quite simple, it's built using NextJS, since it's a practical framework and I was already used to it. The main goal here is to showcase my projects and provide more information about me.",
@@ -65,7 +70,10 @@
             "cra": "Create React App",
             "parcel": "Parcel",
             "ts": "Typescript",
-            "prettier": "Prettier"
+            "prettier": "Prettier",
+            "prisma": "Prisma",
+            "remix": "Remix",
+            "mongodb": "MongoDB"
         }
     },
     "about": {

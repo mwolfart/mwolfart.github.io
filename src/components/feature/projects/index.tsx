@@ -9,6 +9,7 @@ import {
   PatasDetails,
   PortfolioDetails,
 } from '@feature-components'
+import { ExpensableDetails } from '../project-details/expensable'
 
 export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
   const t = useTranslations('projects')
@@ -24,23 +25,30 @@ export const Projects = forwardRef<HTMLDivElement>((_, ref) => {
 
   const detailsElements = [
     <EmafyDetails key={0} />,
-    <PortfolioDetails key={1} />,
-    <PatasDetails key={2} />,
-    <CowDetails key={3} />,
-    <DaveDetails key={4} />,
+    <ExpensableDetails key={1} />,
+    <PortfolioDetails key={2} />,
+    <PatasDetails key={3} />,
+    <CowDetails key={4} />,
+    <DaveDetails key={5} />,
   ]
 
   const projects = [
     { id: 0, name: 'emafy', title: t('emafy'), desc: t('emafyDescription') },
     {
       id: 1,
+      name: 'expensable',
+      title: t('expensable'),
+      desc: t('expensableDescription'),
+    },
+    {
+      id: 2,
       name: 'portfolio',
       title: t('portfolio'),
       desc: t('portfolioDescription'),
     },
-    { id: 2, name: 'patas', title: t('patas'), desc: t('patasDescription') },
-    { id: 3, name: 'cow', title: t('cow'), desc: t('cowDescription') },
-    { id: 4, name: 'dave', title: t('dave'), desc: t('daveDescription') },
+    { id: 3, name: 'patas', title: t('patas'), desc: t('patasDescription') },
+    { id: 4, name: 'cow', title: t('cow'), desc: t('cowDescription') },
+    { id: 5, name: 'dave', title: t('dave'), desc: t('daveDescription') },
   ]
 
   return (
