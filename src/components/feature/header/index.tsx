@@ -15,8 +15,8 @@ export const Header: FC = () => {
   const t = useTranslations('header')
   const { scrollTo } = useContext(ScrollContext)
 
-  const containerClasses = `w-full h-fit bg-dark flex flex-row justify-end
-  child:border-r-2 child:border-lightblue child-last:border-none`
+  const containerClasses = `fixed z-10 w-full h-fit bg-dark flex flex-row justify-end
+  child:border-r-2 child:border-lightblue child-last:border-none overflow-none`
 
   const tablet = 'hidden sm:block'
   const mobile = 'block sm:hidden'

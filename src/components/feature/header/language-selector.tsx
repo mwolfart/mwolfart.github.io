@@ -44,7 +44,7 @@ export const LanguageSelector: FC = () => {
 
   const currentClasses = cx(
     !showLanguages && 'opacity-1 h-auto',
-    showLanguages && 'opacity-0 h-0',
+    showLanguages && 'opacity-0 h-0 pointer-events-none',
   )
   const flagsClasses = cx(
     'flex flex-row gap-4',
@@ -67,6 +67,7 @@ export const LanguageSelector: FC = () => {
       />
     </div>
   )
+
   const Flags = (
     <div className={flagsClasses}>
       {langs.map((lang) => (

@@ -7,7 +7,7 @@ export default function Home(): ReactNode {
   const { refs } = useContext(ScrollContext)
 
   return (
-    <div className="h-full scroll-smooth overflow-y-auto overflow-x-hidden">
+    <div className="h-full overflow-x-hidden">
       <Intro ref={refs[0]} />
       <About ref={refs[1]} />
       <Projects ref={refs[2]} />

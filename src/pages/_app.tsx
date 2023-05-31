@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactNode => {
   return (
     <LanguageProvider>
       <ScrollProvider>
-        <div className="h-screen flex flex-col">
+        <div className="relative">
           <Header />
           <Component {...pageProps} />
         </div>
