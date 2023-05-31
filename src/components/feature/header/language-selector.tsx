@@ -42,30 +42,9 @@ export const LanguageSelector: FC = () => {
     setShowLanguages(false)
   }
 
-  const currentClasses = cx(
-    !showLanguages && 'opacity-1 h-auto',
-    showLanguages && 'opacity-0 h-0 pointer-events-none',
-  )
   const flagsClasses = cx(
-    'flex flex-row gap-4',
-    !showLanguages && 'opacity-0 h-0',
-    showLanguages && 'opacity-1 h-auto',
-  )
-  const wrapperClasses = cx(
-    'transition-[max-width] my-4 px-4',
-    !showLanguages && 'max-w-[80px]',
-    showLanguages && 'max-w-[400px]',
-  )
-
-  const Current = (
-    <div className={currentClasses}>
-      <Icon
-        country={language}
-        onClick={() => setShowLanguages(true)}
-        ariaLabel={t('change-language')}
-        preventTab={showLanguages}
-      />
-    </div>
+    'absolute flex flex-row gap-4 h-fit bg-dark p-4 right-0 top-full my-4 transition',
+    !showLanguages && 'translate-x-full',
   )
 
   const Flags = (
@@ -83,8 +62,13 @@ export const LanguageSelector: FC = () => {
   )
 
   return (
-    <div className={wrapperClasses}>
-      {Current}
+    <div className="my-4 px-4 relative">
+      <Icon
+        country={language}
+        onClick={() => setShowLanguages(true)}
+        ariaLabel={t('change-language')}
+        preventTab={showLanguages}
+      />
       {Flags}
     </div>
   )
