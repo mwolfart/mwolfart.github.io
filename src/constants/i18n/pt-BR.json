@@ -9,7 +9,12 @@
         "pt-BR": "Português",
         "es": "Espanhol",
         "de": "Alemão",
-        "fr": "Francês"
+        "fr": "Francês",
+        "change-theme": "Trocar tema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "system": "Sistema",
+        "page-title": "Murilo Wolfart - portfólio"
     },
     "home": {
         "prefix": "Olá! Eu sou",
@@ -22,7 +27,7 @@
         "technologiesUsed": "Tecnologias utilizadas",
         "emafy": "Emafy",
         "emafyDescription": "Um wrapper de Spotify personalizado em que o usuário pode ouvir músicas e pesquisar mídias.",
-        "emafyP1": "Este é um wrapper personalizado para o Spotify, que pode ser utilizado para tocar músicas, artistas, álbuns e playlists. Ele usa um design moderno, disponível no Figma.", 
+        "emafyP1": "Este é um wrapper personalizado para o Spotify, que pode ser utilizado para tocar músicas, artistas, álbuns e playlists. Ele usa um design moderno, disponível no Figma.",
         "emafyP2": "O projeto foi criado utilizando primariamente React e Styled Components, e o objetivo principal foi aprender estas frameworks, melhorar minhas habilidades com elas, e estudar conceitos de Front-end. Além disso, foi usado também para praticar o uso de bibliotecas React, como Infinite Scroll, Jest, e Font-awesome. Neste projeto foi também realizado uma migração de um setup em CRA para um em Parcel.",
         "emafyP3": "Este projeto foi inicialmente criado com a ajuda de Afonso Ferrer, um colega meu, e posteriormente mantido por mim.",
         "expensable": "Expensable",

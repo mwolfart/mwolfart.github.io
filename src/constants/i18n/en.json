@@ -13,7 +13,8 @@
         "change-theme": "Change theme",
         "light": "Light",
         "dark": "Dark",
-        "system": "System"
+        "system": "System",
+        "page-title": "Murilo Wolfart - portfolio"
     },
     "home": {
         "prefix": "Hey there! I am",
