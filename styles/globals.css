@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-dark: #96b9da;
+    --color-snow: #232724;
+    --color-primary: #df5018;
+    --color-blue: #c3dbfa;
+    --color-lightblue: #d6dfec;
+    --color-midblue: #a4caff;
+  }
+
+  :root[class="dark"] {
+    --color-dark: #26262f;
+    --color-snow: #f8f9fd;
+    --color-primary: #edbe11;
+    --color-blue: #474875;
+    --color-lightblue: #797bc9;
+    --color-midblue: #797bc9;
+  }
+
   html,
   body {
     padding: 0;
@@ -52,9 +70,6 @@
 
   ul li::marker {
     @apply text-primary;
-  }
-
-  @media (prefers-color-scheme: dark) {
   }
 }
 

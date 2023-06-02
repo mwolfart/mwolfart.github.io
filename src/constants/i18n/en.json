@@ -9,7 +9,11 @@
         "pt-BR": "Portuguese",
         "es": "Spanish",
         "de": "German",
-        "fr": "French"
+        "fr": "French",
+        "change-theme": "Change theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
     },
     "home": {
         "prefix": "Hey there! I am",
@@ -22,7 +26,7 @@
         "technologiesUsed": "Technologies used",
         "emafy": "Emafy",
         "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
-        "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.", 
+        "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.",
         "emafyP2": "The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.",
         "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
         "expensable": "Expensable",

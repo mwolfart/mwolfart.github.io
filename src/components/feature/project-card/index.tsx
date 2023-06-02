@@ -29,7 +29,7 @@ export const ProjectCard: FC<Props> = ({
   }
 
   const wrapperClasses = cx(
-    'text-left flex flex-col bg-lightblue w-full md:w-half-gap-8 lg:w-96 cursor-pointer transition',
+    'text-left flex flex-col bg-midblue dark:bg-lightblue w-full md:w-half-gap-8 lg:w-96 cursor-pointer transition',
     hasTransition && 'hover:scale-110',
   )
 

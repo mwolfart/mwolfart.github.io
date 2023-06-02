@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     screens: {
       xs: '350px',
@@ -12,12 +13,13 @@ module.exports = {
       '3xl': '1680px',
     },
     colors: {
-      dark: '#26262f',
-      snow: '#f8f9fd',
-      primary: '#edbe11',
-      blue: '#474875',
-      lightblue: '#797bc9',
-      transparent: '#00000000'
+      dark: 'var(--color-dark)',
+      snow: 'var(--color-snow)',
+      primary: 'var(--color-primary)',
+      blue: 'var(--color-blue)',
+      lightblue: 'var(--color-lightblue)',
+      midblue: 'var(--color-midblue)',
+      transparent: 'transparent',
     },
     fontFamily: {
       opensans: ['OpenSans', 'Arial', 'serif'],

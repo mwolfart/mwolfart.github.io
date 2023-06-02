@@ -13,17 +13,18 @@ interface IconProps {
 
 const Icon: FC<IconProps> = ({ country, onClick, ariaLabel, preventTab }) => {
   const flags = {
-    en: <US title="US" />,
-    'pt-BR': <BR title="BR" />,
-    es: <ES title="ES" />,
-    de: <DE title="DE" />,
-    fr: <FR title="FR" />,
+    en: <US />,
+    'pt-BR': <BR />,
+    es: <ES />,
+    de: <DE />,
+    fr: <FR />,
   }
   return (
     <button
       className="w-10 sm:w-12 cursor-pointer flex flex-col justify-center"
       onClick={onClick}
       aria-label={ariaLabel}
+      title={ariaLabel}
       tabIndex={preventTab ? -1 : 0}
     >
       {flags[country]}
@@ -43,7 +44,7 @@ export const LanguageSelector: FC = () => {
   }
 
   const flagsClasses = cx(
-    'absolute flex flex-row gap-4 h-fit bg-dark p-4 right-0 top-full my-4 transition',
+    'absolute flex flex-row gap-4 h-fit bg-dark p-4 right-0 top-full transition',
     !showLanguages && 'translate-x-full',
   )
 
@@ -62,7 +63,7 @@ export const LanguageSelector: FC = () => {
   )
 
   return (
-    <div className="my-4 px-4 relative">
+    <div className="my-4 px-4">
       <Icon
         country={language}
         onClick={() => setShowLanguages(true)}

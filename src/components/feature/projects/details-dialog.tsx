@@ -18,7 +18,7 @@ export const ProjectDetailsDialog: FC<Props> = ({
   const t = useTranslations('projects')
   const windowWidth = useRef(typeof window !== 'undefined' && window.innerWidth)
   const detailsWrapperClasses = cx(
-    'fixed md:absolute transition top-0 bottom-0 w-full bg-lightblue z-10 left-0 flex flex-col md:p-16 visible',
+    'fixed md:absolute transition top-0 bottom-0 w-full bg-midblue dark:bg-lightblue z-10 left-0 flex flex-col md:p-16 visible',
     !isOpen &&
       'translate-x-[600px] sm:translate-x-[1200px] md:translate-x-[2000px] invisible',
   )
