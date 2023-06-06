@@ -17,17 +17,22 @@ export const ProjectDetailsDialog: FC<Props> = ({
 }) => {
   const t = useTranslations('projects')
   const [hideDialog, setHideDialog] = useState(true)
-  const windowWidth = useRef(
-    typeof window !== 'undefined' ? window.innerWidth : 0,
-  )
-  const detailsWrapperClasses = cx(
-    'fixed md:absolute transition top-0 bottom-0 w-full bg-midblue dark:bg-lightblue z-10 left-0 flex flex-col md:p-16 visible',
-    !isOpen &&
-      'translate-x-[600px] sm:translate-x-[1200px] md:translate-x-[2000px]',
-    hideDialog && 'invisible',
-  )
+  const [windowWidth, setWindowWidth] = useState<number>()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const onResize = (): void => {
+        setWindowWidth(window.innerWidth)
+      }
+      window.addEventListener('resize', onResize)
+      return () => {
+        window.removeEventListener('resize', onResize)
+      }
+    }
+  }, [])
 
   // Hack for transitioning while making tabbing consistent
+  // Only applies for desktop
   useEffect(() => {
     const toggleVisibility = async (): Promise<void> => {
       if (!isOpen && !hideDialog) {
@@ -40,8 +45,16 @@ export const ProjectDetailsDialog: FC<Props> = ({
     toggleVisibility()
   }, [hideDialog, isOpen])
 
+  const detailsWrapperClasses = cx(
+    'fixed 2xl:absolute transition top-0 bottom-0 w-full bg-midblue',
+    'dark:bg-lightblue z-20 2xl:z-10 left-0 flex flex-col md:p-16 visible',
+    !isOpen &&
+      'translate-x-[600px] sm:translate-x-[1200px] md:translate-x-[2000px] max-2xl:invisible',
+    hideDialog && '2xl:invisible',
+  )
+
   return (
-    <FocusTrap active={windowWidth && windowWidth.current < 768 && isOpen}>
+    <FocusTrap active={!!windowWidth && windowWidth < 1440 && isOpen}>
       <div className={detailsWrapperClasses}>
         <div className="flex-grow p-10 md:p-0 overflow-y-auto">{content}</div>
         <Button variant="outlined" className="mx-auto" onClick={onClose}>
