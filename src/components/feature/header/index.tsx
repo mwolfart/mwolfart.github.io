@@ -23,7 +23,7 @@ export const Header: FC = () => {
   const mobile = 'block sm:hidden'
 
   return (
-    <div className="fixed z-10 w-full">
+    <div className="fixed z-20 w-full">
       <nav className={containerClasses}>
         <Button onClick={() => scrollTo(0)} className={tablet}>
           {t('home')}
