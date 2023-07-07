@@ -22,7 +22,20 @@ export const ExpensableDetails: FC = () => {
     >
       <p>{t('expensableP1')}</p>
       <p>{t('expensableP2')}</p>
-      <p>{t('expensableP3')}</p>
+      <p>
+        {t.rich('expensableP3', {
+          a: (children) => (
+            <a
+              href="https://expensable.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              className="transition underline hover:decoration-transparent"
+            >
+              {children}
+            </a>
+          ),
+        })}
+      </p>
     </DetailsWrapper>
   )
 }

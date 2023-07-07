@@ -34,7 +34,7 @@
         "expensableDescription": "An online expense management tool designed to keep track of money and financial goals.",
         "expensableP1": "This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.",
         "expensableP2": "The project was designed using Remix, Prisma, MongoDB and TailwindCSS. The main goals here were to A) replace a set of spreadsheets I was using to keep track of my expenses and B) learn Remix and acquire a little bit of experience with MongoDB.",
-        "expensableP3": "The status of the project is currently in progress. A few screens are finished but there are more features that need to be finished, and there is also a little bit of technical debt that needs to be addressed",
+        "expensableP3": "Thes status is currently in progress. A few screens are finished but there are more features that need to be worked on, and there is also a little bit of technical debt that needs to be addressed. The website is however deployed at <a>Vercel</a>.",
         "portfolio": "Portfolio",
         "portfolioDescription": "The web page you're currently viewing, which contains information about me and my projects.",
         "portfolioP1": "This portfolio was designed using a layout of my own. Even though the website is quite simple, it's built using NextJS, since it's a practical framework and I was already used to it. The main goal here is to showcase my projects and provide more information about me.",
