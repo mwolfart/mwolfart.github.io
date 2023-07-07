@@ -1,8 +1,7 @@
 import { Intro, About, Projects, Contact } from '@feature-components'
 import { ScrollContext } from '@providers'
 import Head from 'next/head'
-import { useContext } from 'react'
-import { ReactNode } from 'react'
+import { useContext, ReactNode } from 'react'
 import { useTranslations } from 'use-intl'
 
 export default function Home(): ReactNode {

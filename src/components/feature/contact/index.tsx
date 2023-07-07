@@ -34,7 +34,7 @@ export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
             {t('title')}
           </h1>
           <p className="text-md">{t('description')}</p>
-          <div className="flex flex-row flex-wrap gap-8 justify-around lg:w-3/4">
+          <div className="flex flex-row flex-wrap gap-8 justify-around lg:w-full">
             <ContactCard
               title={t('linkedin')}
               urlText={urls.linkedin.text}

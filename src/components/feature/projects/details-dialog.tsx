@@ -1,5 +1,5 @@
 import { Button } from '@ui-components'
-import { FC, ReactNode, useEffect, useRef, useState } from 'react'
+import { FC, ReactNode, useEffect, useState } from 'react'
 import { useTranslations } from 'use-intl'
 import cx from 'classnames'
 import FocusTrap from 'focus-trap-react'
@@ -29,6 +29,7 @@ export const ProjectDetailsDialog: FC<Props> = ({
         window.removeEventListener('resize', onResize)
       }
     }
+    return
   }, [])
 
   // Hack for transitioning while making tabbing consistent
