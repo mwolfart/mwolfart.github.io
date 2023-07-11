@@ -29,7 +29,7 @@
         "emafyDescription": "A custom spotify wrapper where the user can play music and search for media.",
         "emafyP1": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It uses a modern design, available in Figma.",
         "emafyP2": "The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.",
-        "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
+        "emafyP3": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me. The website is deployed at <a>Github Pages</a>.",
         "expensable": "Expensable",
         "expensableDescription": "An online expense management tool designed to keep track of money and financial goals.",
         "expensableP1": "This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.",

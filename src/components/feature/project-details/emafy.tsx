@@ -23,6 +23,20 @@ export const EmafyDetails: FC = () => {
       <p>{t('emafyP1')}</p>
       <p>{t('emafyP2')}</p>
       <p>{t('emafyP3')}</p>
+      <p>
+        {t.rich('emafyP3', {
+          a: (children) => (
+            <a
+              href="https://mwolfart.github.io/emafy/"
+              target="_blank"
+              rel="noreferrer"
+              className="transition underline hover:decoration-transparent"
+            >
+              {children}
+            </a>
+          ),
+        })}
+      </p>
     </DetailsWrapper>
   )
 }
