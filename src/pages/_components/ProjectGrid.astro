@@ -1,12 +1,14 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
 import projects from "../../constants/projects";
+import * as i18n from "../../constants/content.json";
 
 const { id: currentId } = Astro.props;
 
 const selectedProject = currentId && projects.find(({ id }) => id === currentId);
 const baseUrl = import.meta.env.PUBLIC_BASE_PATH
 const src = currentId && `${baseUrl}/images/${selectedProject.id}.jpg`;
+const content = i18n.projects;
 ---
 
 <div class="flex flex-col gap-4">
@@ -39,6 +41,7 @@ const src = currentId && `${baseUrl}/images/${selectedProject.id}.jpg`;
           <div class="flex flex-col gap-4">
             <h2 class="font-semibold">{selectedProject.title}</h2>
             <div class="flex flex-col gap-4" set:html={selectedProject.long} />
+            {selectedProject.link && <a href={selectedProject.link}>{content.repoLink}</a>}
           </div>
         </ProjectCard>
       </div>

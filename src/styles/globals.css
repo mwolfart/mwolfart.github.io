@@ -10,6 +10,7 @@
     --color-blue: #433fc4;
     --color-indigo: #242189;
     --color-cream: #ecd9a2;
+    --color-gray: #e0e0e0;
   }
 
   /* @media (prefers-color-scheme: dark) {

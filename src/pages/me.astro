@@ -1,17 +1,57 @@
 ---
 import Layout from "./_components/Layout.astro";
+import ToolCard from "./_components/ToolCard.astro";
 import * as i18n from "../constants/content.json";
 
+const baseUrl = import.meta.env.PUBLIC_BASE_PATH
 const content = i18n.home
 const aboutText = i18n.about.content;
+
+const technologies = [
+    { name: "React", years: 5, proficiency: 5 },
+    { name: "Next", years: 2, proficiency: 4 },
+    { name: "Typescript", years: 6, proficiency: 5 },
+    { name: "Javascript", years: 8, proficiency: 5 },
+    { name: "HTML", years: 8, proficiency: 5 },
+    { name: "CSS", years: 8, proficiency: 5 },
+    { name: "Styled Components", years: 1, proficiency: 4 },
+    { name: "TailwindCSS", proficiency: 5 },
+    { name: "CSS Modules", proficiency: 5 },
+    { name: "Sass", proficiency: 5 },
+    { name: "Angular", proficiency: 3 },
+    { name: "Astro", proficiency: 3 },
+    { name: "MaterialUI", proficiency: 5 },
+    { name: "React Query" },
+    { name: "React Native", years: 1, proficiency: 3 },
+    { name: "Unit testing" },
+    { name: "Responsiveness", years: 6, proficiency: 5 },
+    { name: "Accessibility", years: 4, proficiency: 5 },
+    { name: "Remix", years: 1, proficiency: 4 },
+    { name: "Firebase", proficiency: 3 },
+    { name: "CRA" },
+    { name: "Parcel" },
+    { name: "jQuery" },
+    { name: "MongoDB", years: 1, proficiency: 3 },
+    { name: "Prisma", proficiency: 3 },
+    { name: "Python", proficiency: 4 },
+    { name: "Django", years: 1, proficiency: 2 },
+]
 ---
 
 <Layout>
-    <div class="flex flex-col mt-16">
+    <div class="flex flex-col py-16">
         <span class="text-sm md:text-md text-lightblue">
             {content.prefix}
         </span>
         <h1>{content.name}</h1>
-        <div class="text-sm flex flex-col gap-4 pt-10" set:html={aboutText} />
+        <div class="flex gap-4 pt-10">
+            <img src={`${baseUrl}/images/profile-2x.jpg`} aria-hidden={true} class="w-1/4 object-cover" />
+            <div class="text-sm flex flex-col gap-6" set:html={aboutText} />
+        </div>
+        <div class="py-8 flex flex-wrap gap-4">
+            {technologies.map((props) => (
+                <ToolCard {...props} />
+            ))}
+        </div>
     </div>
 </Layout>
