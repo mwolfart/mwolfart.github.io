@@ -1,0 +1,20 @@
+---
+import Layout from "./_components/Layout.astro";
+import ProjectGrid from "./_components/ProjectGrid.astro";
+import * as i18n from "../constants/content.json";
+
+const content = i18n.home;
+---
+
+<Layout>
+	<div class="flex flex-col h-full">
+		<div class="flex-grow flex flex-col mt-16">
+			<span class="text-sm md:text-md text-lightblue">
+				{content.prefix}
+			</span>
+			<h1>{content.name}</h1>
+			<p class="text-md font-semibold my-4 max-w-2xl">{content.welcome}</p>
+		</div>
+		<ProjectGrid />
+	</div>
+</Layout>

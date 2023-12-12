@@ -1,0 +1,17 @@
+---
+import Layout from "../_components/Layout.astro";
+import ProjectGrid from "../_components/ProjectGrid.astro";
+import projects from "../../constants/projects";
+
+const { projectId } = Astro.params;
+
+export function getStaticPaths() {
+  return projects.map(({ id }) => ({ params: { projectId: id } }));
+}
+---
+
+<Layout>
+  <ProjectGrid
+    id={projectId}
+  />
+</Layout>
