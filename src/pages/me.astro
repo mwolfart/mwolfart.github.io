@@ -40,12 +40,15 @@ const technologies = [
 
 <Layout>
     <div class="flex flex-col py-8">
-        <span class="text-sm md:text-md text-lightblue">
-            {content.prefix}
-        </span>
-        <h1 class="text-magenta">{content.name}</h1>
-        <div class="flex gap-4 pt-10">
-            <div class="text-sm flex flex-col gap-6" set:html={aboutText} />
+        <div class="flex gap-16">
+            <div class="flex flex-col">
+                <span class="text-sm md:text-md text-lightblue">
+                    {content.prefix}
+                </span>
+                <h1 class="text-magenta">{content.name}</h1>
+                <div class="text-sm flex flex-col gap-6 mt-10" set:html={aboutText} />
+            </div>
+            <img src={`${baseUrl}/images/profile.png`} aria-hidden={true} class="w-1/4 object-cover" />
         </div>
         <div class="py-8 flex flex-wrap gap-4">
             {technologies.map((props) => (
