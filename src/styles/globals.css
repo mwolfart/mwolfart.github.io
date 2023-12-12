@@ -9,8 +9,9 @@
     --color-lavender: #7d71da;
     --color-blue: #433fc4;
     --color-indigo: #242189;
-    --color-cream: #ecd9a2;
-    --color-gray: #e0e0e0;
+    --color-magenta: #cb0271;
+    --color-test: #cb0271;
+    --color-gray: #cfcfcf;
   }
 
   /* @media (prefers-color-scheme: dark) {

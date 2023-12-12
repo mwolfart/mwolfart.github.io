@@ -39,7 +39,7 @@ const content = i18n.projects;
       >
         <ProjectCard src={src} alt={selectedProject.title}>
           <div class="flex flex-col gap-4">
-            <h2 class="font-semibold">{selectedProject.title}</h2>
+            <h2 class="font-semibold text-magenta">{selectedProject.title}</h2>
             <div class="flex flex-col gap-4" set:html={selectedProject.long} />
             {selectedProject.link && <a href={selectedProject.link}>{content.repoLink}</a>}
           </div>
