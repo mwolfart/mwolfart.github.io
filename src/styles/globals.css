@@ -76,6 +76,10 @@
   ul li::marker {
     @apply text-indigo;
   }
+
+  .opacity-full {
+    opacity: 1 !important;
+  }
 }
 
 @font-face {

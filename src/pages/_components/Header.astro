@@ -15,5 +15,21 @@ import { Icon } from 'astro-icon'
         <a class="decoration-transparent h-full aspect-square hover:scale-110" href="https://www.linkedin.com/in/murilo-wolfart/" target="_blank" rel="noreferrer">
             <Icon name="grommet-icons:linkedin" />
         </a>
+        <div class="relative h-full aspect-square">
+            <button class="relative h-full w-full hover:scale-110" id="mailBtn">
+                <Icon name="grommet-icons:mail" />
+            </button>
+            <div id="mailPopup" class="flex items-center opacity-0 transition absolute top-0 left-12 w-fit px-2 rounded-lg h-full bg-gray text-indigo text-2xs font-semibold">Copied!</div>
+        </div>
     </div>
 </div>
+<script>
+    document.querySelector("#mailBtn").addEventListener("click", () => {
+        navigator.clipboard.writeText("mwolfart@gmail.com")
+        const popup = document.querySelector("#mailPopup")
+        popup.classList.add("opacity-full")
+        setTimeout(() => {
+            popup.classList.remove("opacity-full")
+        }, 3000)
+    })
+</script>

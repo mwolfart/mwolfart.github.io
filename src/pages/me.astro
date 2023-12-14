@@ -48,7 +48,9 @@ const technologies = [
                 <h1 class="text-magenta">{content.name}</h1>
                 <div class="text-sm flex flex-col gap-6 mt-10" set:html={aboutText} />
             </div>
-            <img src={`${baseUrl}/images/profile.png`} aria-hidden={true} class="w-1/4 object-cover" />
+            <div class="w-full border border-indigo p-4">
+                <img src={`${baseUrl}/images/profile.png`} aria-hidden={true} class="h-full object-cover" />
+            </div>
         </div>
         <div class="py-8 flex flex-wrap gap-4">
             {technologies.map((props) => (
