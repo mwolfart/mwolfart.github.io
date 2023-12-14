@@ -6,48 +6,53 @@ import * as i18n from "../../constants/content.json";
 const { id: currentId } = Astro.props;
 
 const selectedProject = currentId && projects.find(({ id }) => id === currentId);
-const baseUrl = import.meta.env.PUBLIC_BASE_PATH
+const baseUrl = import.meta.env.PUBLIC_BASE_PATH;
 const src = currentId && `${baseUrl}/images/${selectedProject.id}.jpg`;
 const content = i18n.projects;
 ---
 
 <div class="flex flex-col-reverse gap-4 md:flex-col">
-  <div class="flex flex-col gap-4">
-    {selectedProject && (<h3 class="md:hidden mt-6 pt-6 border-t-2 border-indigo font-semibold pb-4">{content.otherProjects}</h3>)}
-    <div
-      class="grid gap-4 grid-cols-1 md:grid-cols-4"
-    >
-      {projects
-          .filter(({ id }) => id !== currentId)
-          .map(({ id, title, short }) => (
-            <div class="@container w-full" style={{ viewTransitionName: `projects-${id}` }}>
-              <a class="block h-full border-b border-azure hover:scale-105 transition no-underline" href={`/${id}`}>
-                <ProjectCard
-                  src={`${import.meta.env.PUBLIC_BASE_PATH}/images/${id}.jpg`}
-                  alt={title}
-                >
-                  <h4 class="font-semibold">{title}</h4>
-                  <p class="text-xs">{short}</p>
-                </ProjectCard>
-              </a>
-            </div>
-          ))}
+    <div class="flex flex-col gap-4">
+        {selectedProject && 
+            (<h3 class="md:hidden mt-6 pt-6 border-t-2 border-indigo font-semibold pb-4">
+                {content.otherProjects}
+            </h3>)
+        }
+        <div
+            class="grid gap-4 grid-cols-1 md:grid-cols-4"
+        >
+            {projects
+                .filter(({ id }) => id !== currentId)
+                .map(({ id, title, short }) => (
+                    <div class="@container w-full" style={{ viewTransitionName: `projects-${id}` }}>
+                    <a 
+                        class="block h-full border-b border-azure hover:scale-105 transition no-underline" 
+                        href={`/${id}`}
+                    >
+                        <ProjectCard
+                            src={`${import.meta.env.PUBLIC_BASE_PATH}/images/${id}.jpg`}
+                            alt={title}
+                        >
+                        <h4 class="font-semibold">{title}</h4>
+                        <p class="text-xs">{short}</p>
+                        </ProjectCard>
+                    </a>
+                    </div>
+            ))}
+        </div>
     </div>
-  </div>
-  {
-    selectedProject && (
-      <div
-        class="@container"
-        style={{ viewTransitionName: `projects-${selectedProject.id}` }}
-      >
-        <ProjectCard src={src} alt={selectedProject.title}>
-          <div class="flex flex-col gap-4">
-            <h2 class="font-semibold text-magenta">{selectedProject.title}</h2>
-            <div class="flex flex-col gap-4" set:html={selectedProject.long} />
-            {selectedProject.link && <a href={selectedProject.link}>{content.repoLink}</a>}
-          </div>
-        </ProjectCard>
-      </div>
-    )
-  }
+    {selectedProject && (
+        <div
+            class="@container"
+            style={{ viewTransitionName: `projects-${selectedProject.id}` }}
+        >
+            <ProjectCard src={src} alt={selectedProject.title}>
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-semibold text-magenta">{selectedProject.title}</h2>
+                    <div class="flex flex-col gap-4" set:html={selectedProject.long} />
+                    {selectedProject.link && <a href={selectedProject.link}>{content.repoLink}</a>}
+                </div>
+            </ProjectCard>
+        </div>
+    )}
 </div>

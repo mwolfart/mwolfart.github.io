@@ -3,17 +3,17 @@ const { src, alt } = Astro.props;
 ---
 
 <div class="relative flex flex-col @lg:flex-row @lg:pb-4">
-  <img
-    src={src}
-    alt={alt}
-    class="visible h-32 w-full rounded-md @lg:hidden object-cover object-bottom"
+    <img
+        src={src}
+        alt={alt}
+        class="visible h-32 w-full rounded-md @lg:hidden object-cover object-bottom"
     />
-  <img
-    src={src}
-    alt={alt}
-    class="hidden @lg:block object-cover object-left w-1/3 aspect-[3/2]"
-  />
-  <div class="py-4 @lg:py-0 @lg:px-4 @lg:w-2/3">
-    <slot />
-  </div>
+    <img
+        src={src}
+        alt={alt}
+        class="hidden @lg:block object-cover object-left w-1/3 aspect-[3/2]"
+    />
+    <div class="py-4 @lg:py-0 @lg:px-4 @lg:w-2/3">
+        <slot />
+    </div>
 </div>
