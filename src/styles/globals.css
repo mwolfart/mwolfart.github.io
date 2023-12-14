@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --color-salmon: #d8a7c0;
+    --color-salmon: #ecbed6;
     --color-azure: #3c49ec;
     --color-lavender: #7d71da;
     --color-blue: #433fc4;
@@ -27,7 +27,7 @@
   }
 
   body {
-    @apply font-opensans text-indigo text-sm bg-gradient-to-br from-salmon via-lavender via-70% to-azure bg-fixed bg-no-repeat;
+    @apply font-opensans text-indigo text-sm bg-gradient-to-br from-salmon via-lavender via-85% to-azure bg-fixed bg-no-repeat;
   }
 
   a {
