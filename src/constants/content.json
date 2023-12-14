@@ -9,7 +9,8 @@
         "portfolio": "Portfolio",
         "portfolioShort": "The web page you're currently viewing",
         "portfolioLong": "<p>So far I had three versions of my portfolio, with this being the third one. It was developed using AstroJS and Tailwind, following a view transitions tutorial by Jack Herrington (available on <a href=\"https://www.youtube.com/watch?v=lISvyIaSRyk\" rel=\"noreferrer\" target=\"blank\">Youtube</a>).</p><p>The first version was a very bland one developed with pure React, React Router and class components, while the second one was created with NextJS and Tailwind. All versions used a design developed by myself.</p><p>The main reason for developing a third version in favor of the second one is the effectiveness of AstroJS for this type of project (and to also try a few more transitions).</p>",
-        "repoLink": "Link to the project's repository"
+        "repoLink": "Link to the project's repository",
+        "otherProjects": "Other projects"
     },
     "home": {
         "prefix": "Hey there, I'm",
