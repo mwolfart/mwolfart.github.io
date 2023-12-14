@@ -10,7 +10,8 @@ const proficiencyLevels = [content.proficiencyBasic, content.proficiencyModerate
     {name}
     {(years || proficiency) && (
         <div class="absolute hidden group-hover:flex flex-col left-0 top-10 h-fit bg-gray text-indigo text-2xs z-10 py-1 px-2 rounded-md whitespace-nowrap">
-            {years && (<span>{content.yearsOfExperience.replace("{years}", years)}</span>)}
+            {years && (<span class="hidden md:block">{content.yearsOfExperience.replace("{years}", years)}</span>)}
+            {years && (<span class="block md:hidden">{content.years.replace("{years}", years)}</span>)}
             {proficiency && (<span>{proficiencyLevels[proficiency - 1]}</span>)}
         </div>
     )}

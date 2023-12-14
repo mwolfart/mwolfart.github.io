@@ -20,10 +20,11 @@
     "about": {
         "content": "<p>I am a computer scientist and software developer based in Porto Alegre, RS, Brazil. I've been working with development since 2016, and am currently focusing more on front-end technologies and tools.</p><p>Below you can see a list of everything I have worked with - from languages and frameworks to techniques and practices.</p><p>Besides coding, I like sports, music, and video-games - mainly metroidvanias and side-scrollers (yes, I am huge Nintendo fan). On weekends I really like to go skating while listening to some good music. I also love hiking and exploring the nature.</p>",
         "yearsOfExperience": "{years}+ years of experience",
-        "proficiencyExcellent": "Excellent proficiency",
-        "proficiencyVeryGood": "Very good proficiency",
-        "proficiencyGood": "Good proficiency",
-        "proficiencyModerate": "Moderate proficiency",
-        "proficiencyBasic": "Basic proficiency"
+        "years": "{years}+ years",
+        "proficiencyExcellent": "Excellent skills",
+        "proficiencyVeryGood": "Very good skills",
+        "proficiencyGood": "Good skills",
+        "proficiencyModerate": "Moderate skills",
+        "proficiencyBasic": "Basic skills"
     }
 }
