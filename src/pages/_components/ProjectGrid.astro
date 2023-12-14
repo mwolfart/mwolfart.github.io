@@ -50,7 +50,9 @@ const content = i18n.projects;
                 <div class="flex flex-col gap-4">
                     <h2 class="font-semibold text-magenta">{selectedProject.title}</h2>
                     <div class="flex flex-col gap-4" set:html={selectedProject.long} />
-                    {selectedProject.link && <a href={selectedProject.link}>{content.repoLink}</a>}
+                    {selectedProject.link && 
+                        <a href={selectedProject.link} target="_blank" rel="noreferrer">{content.repoLink}</a>
+                    }
                 </div>
             </ProjectCard>
         </div>
