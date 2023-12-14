@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon';
 ---
 
-<div class="w-full flex justify-center">
+<div class="w-full flex justify-center sticky top-0 left-0 bg-gradient-to-br from-salmon via-lavender via-70% to-azure bg-fixed bg-no-repeat z-10">
     <div class="flex max-w-5xl p-4 w-full gap-4">
         <div class="flex-grow flex gap-4 items-center">
             <a 
@@ -24,6 +24,7 @@ import { Icon } from 'astro-icon';
             href="https://github.com/mwolfart" 
             target="_blank" 
             rel="noreferrer"
+            aria-label="Github"
         >
             <Icon name="grommet-icons:github" />
         </a>
@@ -32,16 +33,21 @@ import { Icon } from 'astro-icon';
             href="https://www.linkedin.com/in/murilo-wolfart/" 
             target="_blank" 
             rel="noreferrer"
+            aria-label="Linkedin"
         >
             <Icon name="grommet-icons:linkedin" />
         </a>
         <div class="relative h-full aspect-square">
-            <button class="relative h-full w-full hover:scale-110" id="mailBtn">
+            <button 
+                class="relative h-full w-full hover:scale-110" 
+                id="mailBtn" 
+                aria-label="E-mail"
+            >
                 <Icon name="grommet-icons:mail" />
             </button>
             <div 
                 id="mailPopup" 
-                class="flex items-center opacity-0 transition absolute top-10 right-0 w-fit px-2 rounded-lg h-full bg-gray text-indigo text-2xs font-semibold"
+                class="flex items-center opacity-0 transition absolute top-8 right-0 w-fit px-2 rounded-lg h-full bg-gray text-indigo text-2xs font-semibold"
             >
                 Copied!
             </div>

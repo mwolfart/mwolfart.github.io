@@ -27,7 +27,7 @@
   }
 
   body {
-    @apply font-opensans text-indigo text-sm bg-gradient-to-br from-salmon via-lavender via-70% to-azure;
+    @apply font-opensans text-indigo text-sm bg-gradient-to-br from-salmon via-lavender via-70% to-azure bg-fixed bg-no-repeat;
   }
 
   a {
