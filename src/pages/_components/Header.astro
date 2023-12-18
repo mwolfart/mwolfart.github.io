@@ -44,13 +44,3 @@ import { Icon } from 'astro-icon';
         <small class="hidden sm:block">mwolfart@gmail.com</small>
     </div>
 </div>
-<script>
-    document.querySelector("#mailBtn").addEventListener("click", () => {
-        navigator.clipboard.writeText("mwolfart@gmail.com");
-        const popup = document.querySelector("#mailPopup");
-        popup.classList.add("opacity-full");
-        setTimeout(() => {
-            popup.classList.remove("opacity-full")
-        }, 3000);
-    });
-</script>
