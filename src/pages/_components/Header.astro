@@ -37,21 +37,11 @@ import { Icon } from 'astro-icon';
         >
             <Icon name="grommet-icons:linkedin" />
         </a>
-        <div class="relative h-full aspect-square">
-            <button 
-                class="relative h-full w-full hover:scale-110" 
-                id="mailBtn" 
-                aria-label="E-mail"
-            >
-                <Icon name="grommet-icons:mail" />
-            </button>
-            <div 
-                id="mailPopup" 
-                class="flex items-center opacity-0 transition absolute top-8 right-0 w-fit px-2 rounded-lg h-full bg-gray text-indigo text-2xs font-semibold"
-            >
-                Copied!
-            </div>
+        <div class="hidden sm:block border-l h-full border-indigo" />
+        <div class="hidden sm:block h-full aspect-square">
+            <Icon name="grommet-icons:mail" />
         </div>
+        <small class="hidden sm:block">mwolfart@gmail.com</small>
     </div>
 </div>
 <script>

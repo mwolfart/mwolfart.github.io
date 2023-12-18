@@ -34,7 +34,7 @@ export default {
 		  md: ['24px', '32px'],
 		  sm: ['22px', '23px'],
 		  xs: ['17px', '20px'],
-		  '2xs': ['14px', '16px'],
+		  '2xs': ['14px'],
 		},
 		extend: {},
 	},
