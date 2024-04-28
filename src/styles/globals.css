@@ -4,20 +4,23 @@
 
 @layer base {
   :root {
-    --color-salmon: #ecbed6;
-    --color-azure: #3c49ec;
-    --color-lavender: #7d71da;
-    --color-blue: #433fc4;
-    --color-indigo: #242189;
-    --color-magenta: #cb0271;
-    --color-test: #cb0271;
-    --color-gray: #cfcfcf;
+    --color-highlight: #beaf5a;
+    --color-bgdetail: #ffffff; 
+    --color-white: #353535;
+    --color-dark: #e7e7e7;
+    --color-black: #8b8b8b;
   }
 
-  /* @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     :root {
+      /* --color-highlight: #cb0271; */
+    --color-highlight: #44859e;
+    --color-bgdetail: #363d3c; 
+    --color-white: #cacaca;
+    --color-dark: #181818;
+    --color-black: black;
     }
-  } */
+  }
 
   html,
   body {
@@ -27,7 +30,9 @@
   }
 
   body {
-    @apply font-opensans text-indigo text-sm bg-gradient-to-br from-salmon via-lavender via-85% to-azure bg-fixed bg-no-repeat;
+    @apply font-opensans text-sm text-white;
+    /* @apply bg-gradient-to-br from-bgstart via-bgmid via-30% to-bgend; */
+    background: radial-gradient(ellipse at left, var(--color-bgdetail), var(--color-dark), var(--color-black));
   }
 
   a {
@@ -71,10 +76,6 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-  }
-
-  ul li::marker {
-    @apply text-indigo;
   }
 
   .opacity-full {

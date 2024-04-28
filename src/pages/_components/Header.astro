@@ -2,25 +2,25 @@
 import { Icon } from 'astro-icon';
 ---
 
-<div class="w-full flex justify-center sticky top-0 left-0 bg-gradient-to-br from-salmon via-lavender via-85% to-azure bg-fixed bg-no-repeat z-10">
+<div class="w-full flex justify-center sticky top-0 left-0 z-10">
     <div class="flex max-w-5xl p-4 w-full gap-4">
         <div class="flex-grow flex gap-4 items-center">
             <a 
-                class="decoration-transparent hover:decoration-indigo underline-offset-4" 
+                class="decoration-transparent hover:decoration-white underline-offset-4" 
                 href="/"
             >
                 <h5 class="text-xs sm:text-sm">Home</h5>
             </a>
             <span>·</span>
             <a 
-                class="decoration-transparent hover:decoration-indigo underline-offset-4" 
+                class="decoration-transparent hover:decoration-white underline-offset-4" 
                 href="/me"
             >
                 <h5 class="text-xs sm:text-sm">About me</h5>
             </a>
         </div>
         <a 
-            class="decoration-transparent h-full aspect-square hover:scale-110" 
+            class="decoration-transparent h-full aspect-square hover:scale-125" 
             href="https://github.com/mwolfart" 
             target="_blank" 
             rel="noreferrer"
@@ -29,7 +29,7 @@ import { Icon } from 'astro-icon';
             <Icon name="grommet-icons:github" />
         </a>
         <a 
-            class="decoration-transparent h-full aspect-square hover:scale-110" 
+            class="decoration-transparent h-full aspect-square hover:scale-125" 
             href="https://www.linkedin.com/in/murilo-wolfart/" 
             target="_blank" 
             rel="noreferrer"
@@ -39,7 +39,7 @@ import { Icon } from 'astro-icon';
         </a>
         <div class="relative h-full aspect-square">
             <button 
-                class="relative h-full w-full hover:scale-110" 
+                class="relative h-full w-full hover:scale-125 transition" 
                 id="mailBtn" 
                 aria-label="E-mail"
             >
@@ -47,7 +47,7 @@ import { Icon } from 'astro-icon';
             </button>
             <div 
                 id="mailPopup" 
-                class="flex items-center opacity-0 transition absolute top-8 right-0 w-fit px-2 rounded-lg h-full bg-gray text-indigo text-2xs font-semibold"
+                class="flex items-center opacity-0 transition absolute top-8 right-0 w-fit px-2 rounded-lg h-full text-dark bg-white text-2xs font-semibold"
             >
                 Copied!
             </div>

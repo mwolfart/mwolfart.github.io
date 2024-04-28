@@ -13,13 +13,13 @@ const aboutText = i18n.about.content;
     <div class="flex flex-col py-8">
         <div class="flex gap-16">
             <div class="flex flex-col">
-                <span class="text-sm md:text-md text-lightblue">
+                <span class="text-sm md:text-md">
                     {content.prefix}
                 </span>
-                <h1 class="text-magenta">{content.name}</h1>
+                <h1 class="text-highlight">{content.name}</h1>
                 <div class="text-sm flex flex-col gap-6 mt-10" set:html={aboutText} />
             </div>
-            <div class="w-full border border-indigo p-4 hidden lg:block">
+            <div class="w-full border border-white p-4 hidden lg:block">
                 <img 
                     src={`${baseUrl}/images/profile.png`} 
                     aria-hidden={true}
