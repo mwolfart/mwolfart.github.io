@@ -1,0 +1,41 @@
+---
+import "../../styles/globals.css";
+import { Icon } from "astro-icon";
+---
+
+<div
+  class="relative rounded-full w-16 bg-white h-8 cursor-pointer"
+  id="themeSwitcher"
+  transition:persist
+>
+  <div
+    id="switcherDot"
+    class="absolute h-[90%] top-[1.5px] left-[2px] transition bg-black aspect-square rounded-full"
+  >
+  </div>
+  <div
+    id="sun"
+    class="absolute h-[70%] top-[4px] left-[6px] text-black aspect-square"
+  >
+    <Icon name="bi:sun" />
+  </div>
+  <div
+    id="moon"
+    class="absolute h-[70%] top-[4px] right-[7px] text-black aspect-square"
+  >
+    <Icon name="bi:moon" />
+  </div>
+</div>
+
+<script>
+  document.querySelector("#themeSwitcher").addEventListener("click", () => {
+    const isUsingDarkMode = localStorage.getItem("dark-mode") === "true";
+    if (isUsingDarkMode) {
+      localStorage.setItem("dark-mode", "false");
+      document.body.classList.remove("dark");
+    } else {
+      localStorage.setItem("dark-mode", "true");
+      document.body.classList.add("dark");
+    }
+  });
+</script>

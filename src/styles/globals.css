@@ -1,27 +1,10 @@
+@import url('./theme.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-highlight: #beaf5a;
-    --color-bgdetail: #ffffff; 
-    --color-white: #353535;
-    --color-dark: #e7e7e7;
-    --color-black: #8b8b8b;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      /* --color-highlight: #cb0271; */
-    --color-highlight: #44859e;
-    --color-bgdetail: #363d3c; 
-    --color-white: #cacaca;
-    --color-dark: #181818;
-    --color-black: black;
-    }
-  }
-
   html,
   body {
     padding: 0;
@@ -33,6 +16,7 @@
     @apply font-opensans text-sm text-white;
     /* @apply bg-gradient-to-br from-bgstart via-bgmid via-30% to-bgend; */
     background: radial-gradient(ellipse at left, var(--color-bgdetail), var(--color-dark), var(--color-black));
+    transition: 'all 2s';
   }
 
   a {

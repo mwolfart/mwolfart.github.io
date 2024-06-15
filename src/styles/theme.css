@@ -1,0 +1,41 @@
+@layer base {
+  :root {
+    --color-highlight: #beaf5a;
+    --color-bgdetail: #ffffff; 
+    --color-white: #353535;
+    --color-dark: #e7e7e7;
+    --color-black: #a1a1a1;
+  }
+
+  body.dark {
+    --color-highlight: #44859e;
+    --color-bgdetail: #363d3c; 
+    --color-white: #cacaca;
+    --color-dark: #181818;
+    --color-black: black;
+  }
+
+  body #sun {
+    display: block;
+  }
+
+  body #moon {
+    display: none;
+  }
+
+  body #switcherDot {
+    transform: translateX(102%);
+  }
+
+  body.dark #switcherDot {
+    transform: translateX(0%);
+  }
+
+  body.dark #sun {
+    display: none;
+  }
+
+  body.dark #moon {
+    display: block;
+  }
+}
