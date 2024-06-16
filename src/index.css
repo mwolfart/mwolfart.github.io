@@ -1,68 +1,85 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --color-background: #eaeaea;
+    --color-background-secondary: #c7c7c7;
+    --color-text: #353535;
+    --color-primary: #dd5da2;
+    --color-secondary: #762daa;
   }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: #282828;
+      --color-background-secondary: #323232;
+      --color-text: #f4f4f4;
+      --color-primary: #f6304b;
+      --color-secondary: #9472df;
+    }
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    
+    @apply font-opensans text-sm;
+  }
+
+  a {
+    color: inherit;
+    transition: all 0.3s;
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1px;
+  }
+
   a:hover {
-    color: #747bff;
+    text-decoration-color: transparent;
   }
-  button {
-    background-color: #f9f9f9;
+
+  * {
+    box-sizing: border-box;
   }
+
+  h1 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h3 {
+    @apply text-lg md:text-xl;
+  }
+
+  h4 {
+    @apply text-md md:text-lg;
+  }
+
+  h5 {
+    @apply text-sm md:text-md;
+  }
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  src: url('../../public/font/opensans.ttf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-style: italic;
+  src: url('../../public/font/opensans-italic.ttf');
 }
