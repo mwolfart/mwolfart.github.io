@@ -70,6 +70,10 @@
   h5 {
     @apply text-sm md:text-md;
   }
+
+  p {
+    @apply text-sm md:text-sm;
+  }
 }
 
 @font-face {

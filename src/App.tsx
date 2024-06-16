@@ -6,7 +6,7 @@ import { Scroller } from "./components/scroller";
 
 function App() {
   return (
-    <div className="h-screen">
+    <div className="h-screen pl-4">
       <Scroller>
         <IntroPage />
         <AboutPage />
