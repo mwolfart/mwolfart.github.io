@@ -15,6 +15,7 @@
     "home": {
         "prefix": "Hey there, I'm",
         "name": "Murilo Wolfart",
+        "suffix": "Full-stack developer",
         "welcome": "Welcome to my page! Feel free to explore a little bit of my projects and see what I've been working on!"
     },
     "about": {
