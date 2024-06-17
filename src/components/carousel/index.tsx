@@ -7,7 +7,7 @@ type Props = {
 export const Carousel = ({ children }: Props) => {
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex gap-8 overflow-x-scroll snap-mandatory snap-x">
+      <div className="flex gap-8 overflow-x-scroll snap-mandatory snap-x hide-scrollbar">
         {children.map((child, idx) => (
           <div key={idx} className="shrink-0 basis-full snap-center">
             {child}
