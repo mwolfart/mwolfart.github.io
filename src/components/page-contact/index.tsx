@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -9,9 +10,10 @@ const linkClasses =
   "no-underline inline-flex gap-4 items-center bg-copy text-background py-4 px-8 rounded-full font-semibold w-fit transition hover:bg-primary";
 
 export const ContactPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex-grow flex flex-col gap-8">
-      <p>Get in touch with me!</p>
+      <p>{t("contact.getInTouch")}</p>
       <div className="h-[1px] bg-copy w-full" />
       <div className="flex-grow flex flex-col gap-8">
         <a
@@ -21,7 +23,7 @@ export const ContactPage = () => {
           className={linkClasses}
         >
           <FaGithub size={42} />
-          <span>GitHub profile</span>
+          <span>{t("contact.github")}</span>
         </a>
         <a
           href={linkedinUrl}
@@ -30,7 +32,7 @@ export const ContactPage = () => {
           className={linkClasses}
         >
           <FaLinkedin size={42} />
-          <span>LinkedIn profile</span>
+          <span>{t("contact.linkedin")}</span>
         </a>
         <a
           href={`mailto:${email}`}
@@ -39,7 +41,7 @@ export const ContactPage = () => {
           className={linkClasses}
         >
           <MdEmail size={42} />
-          <span>E-mail address</span>
+          <span>{t("contact.email")}</span>
         </a>
       </div>
       <div className="h-[1px] bg-copy w-full" />

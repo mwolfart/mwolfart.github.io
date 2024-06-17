@@ -34,5 +34,11 @@
         "proficiencyGood": "Good skills",
         "proficiencyModerate": "Moderate skills",
         "proficiencyBasic": "Basic skills"
+    },
+    "contact": {
+        "getInTouch": "Get in touch with me!",
+        "email": "Send me an e-mail",
+        "linkedin": "LinkedIn profile",
+        "github": "Github profile"
     }
 }
