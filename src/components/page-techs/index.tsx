@@ -11,14 +11,28 @@ export const TechsPage = () => {
       <div className="flex-grow">
         <Carousel>
           <div className="flex flex-wrap gap-4 &>*:w-fit">
-            {technologies.slice(0, 20).map((tech, idx) => (
-              <TechPill key={idx} tech={tech.name} />
-            ))}
+            {technologies
+              .slice(0, 20)
+              .map(({ name, years, proficiency }, idx) => (
+                <TechPill
+                  key={idx}
+                  tech={name}
+                  years={years}
+                  proficiency={proficiency}
+                />
+              ))}
           </div>
           <div className="flex flex-wrap gap-4 &>*:w-fit">
-            {technologies.slice(20, 40).map((tech, idx) => (
-              <TechPill key={idx} tech={tech.name} />
-            ))}
+            {technologies
+              .slice(20, 40)
+              .map(({ name, years, proficiency }, idx) => (
+                <TechPill
+                  key={idx}
+                  tech={name}
+                  years={years}
+                  proficiency={proficiency}
+                />
+              ))}
           </div>
         </Carousel>
       </div>

@@ -28,7 +28,7 @@
         "title": "Skills",
         "intro": "Below are some of the technologies I've worked with",
         "yearsOfExperience": "{years}+ years of experience",
-        "years": "{years}+ years",
+        "years": "{{years}}+ years",
         "proficiencyExcellent": "Excellent skills",
         "proficiencyVeryGood": "Very good skills",
         "proficiencyGood": "Good skills",
