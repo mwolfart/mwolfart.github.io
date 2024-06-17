@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  html {
     --color-background: #2a5da3;
     --color-background-secondary: #c7c7c7;
     --color-text: #d1d1d1;
@@ -11,14 +11,12 @@
     --color-secondary: #762daa;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-background: #282828;
-      --color-background-secondary: #323232;
-      --color-text: #f4f4f4;
-      --color-primary: #f6304b;
-      --color-secondary: #9472df;
-    }
+  html.dark {
+    --color-background: #282828;
+    --color-background-secondary: #323232;
+    --color-text: #f4f4f4;
+    --color-primary: #f6304b;
+    --color-secondary: #9472df;
   }
 
   html,
@@ -31,7 +29,7 @@
   body {
     color: var(--color-text);
     background-color: var(--color-background);
-    
+
     @apply font-opensans text-sm;
   }
 
@@ -79,11 +77,11 @@
 @font-face {
   font-family: OpenSans;
   font-style: normal;
-  src: url('../../public/font/opensans.ttf');
+  src: url("../../public/font/opensans.ttf");
 }
 
 @font-face {
   font-family: OpenSans;
   font-style: italic;
-  src: url('../../public/font/opensans-italic.ttf');
+  src: url("../../public/font/opensans-italic.ttf");
 }
