@@ -5,7 +5,8 @@
 @layer base {
   html {
     --color-background: #2a5da3;
-    --color-background-secondary: #c7c7c7;
+    --color-background-secondary: #214d8b;
+    --color-background-tertiary: #c7c7c7;
     --color-text: #d1d1d1;
     --color-primary: #f3c862;
     --color-secondary: #762daa;
@@ -14,6 +15,7 @@
   html.dark {
     --color-background: #282828;
     --color-background-secondary: #323232;
+    --color-background-tertiary: #4b4646;
     --color-text: #f4f4f4;
     --color-primary: #f6304b;
     --color-secondary: #9472df;

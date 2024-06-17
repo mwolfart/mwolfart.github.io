@@ -15,7 +15,8 @@ export default {
     },
     colors: {
       background: "var(--color-background)",
-      backgroundSecondary: "var(--color-background-secondary)",
+      "background-detail": "var(--color-background-secondary)",
+      "background-tertiary": "var(--color-background-tertiary)",
       copy: "var(--color-text)",
       primary: "var(--color-primary)",
       secondary: "var(--color-secondary)",

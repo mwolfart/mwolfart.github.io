@@ -1,10 +1,11 @@
 import { Trans, useTranslation } from "react-i18next";
 import { Carousel } from "../carousel";
+import { BackgroundShape } from "../bg-shape";
 
 export const AboutPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col flex-grow gap-8 [&_span]:text-primary">
+    <div className="flex flex-col flex-grow gap-8 [&_span]:text-primary relative">
       <h1 className="text-primary font-semibold">{t("about.title")}</h1>
       <div className="h-[1px] bg-copy w-full" />
       <div className="flex-grow">
@@ -42,6 +43,7 @@ export const AboutPage = () => {
           <p className="">{t("about.four")}</p>
         </Carousel>
       </div>
+      <BackgroundShape className="w-96 -bottom-48 -left-48" />
     </div>
   );
 };

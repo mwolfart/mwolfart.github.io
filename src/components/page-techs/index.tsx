@@ -2,11 +2,12 @@ import { useTranslation } from "react-i18next";
 import technologies from "../../constants/technologies";
 import { Carousel } from "../carousel";
 import { TechPill } from "./tech-pill";
+import { BackgroundShape } from "../bg-shape";
 
 export const TechsPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 relative">
       <p>{t("techs.intro")}</p>
       <div className="flex-grow">
         <Carousel>
@@ -36,6 +37,7 @@ export const TechsPage = () => {
           </div>
         </Carousel>
       </div>
+      <BackgroundShape className="w-96 -bottom-80 -right-48" />
     </div>
   );
 };
