@@ -37,7 +37,7 @@ export const TechsPage = () => {
           </div>
         </Carousel>
       </div>
-      <BackgroundShape className="w-96 -bottom-80 -right-48" />
+      <BackgroundShape className="w-96 -bottom-80 -left-48" />
     </div>
   );
 };

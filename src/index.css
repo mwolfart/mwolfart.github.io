@@ -6,10 +6,10 @@
   html {
     --color-background: #2a5da3;
     --color-background-secondary: #214d8b;
-    --color-background-tertiary: #c7c7c7;
+    --color-background-tertiary: #423b6d;
     --color-text: #d1d1d1;
     --color-primary: #f3c862;
-    --color-secondary: #762daa;
+    --color-secondary: #aa2d85;
   }
 
   html.dark {

@@ -1,5 +1,7 @@
 {
     "projects": {
+        "intro": "Check out some of my ",
+        "title": "Projects",
         "emafy": "Emafy",
         "emafyShort": "A custom spotify wrapper",
         "emafyLong": "<p>This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists.</p><p>The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.</p><p>This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me. The website is deployed at <a href=\"https://mwolfart.github.io/emafy\" target=\"_blank\" rel=\"noreferrer\">Github Pages</a>.</p>",
@@ -9,6 +11,8 @@
         "portfolio": "Portfolio",
         "portfolioShort": "The web page you're currently viewing",
         "portfolioLong": "<p>So far I had three versions of my portfolio, with this being the third one. It was developed using AstroJS and Tailwind, following a view transitions tutorial by Jack Herrington (available on <a href=\"https://www.youtube.com/watch?v=lISvyIaSRyk\" rel=\"noreferrer\" target=\"blank\">Youtube</a>).</p><p>The first version was a very bland one developed with pure React, React Router and class components, while the second one was created with NextJS and Tailwind. All versions used a design developed by myself.</p><p>The main reason for developing a third version in favor of the second one is the effectiveness of AstroJS for this type of project (and to also try a few more transitions).</p>",
+        "cobalt": "CobaltUI",
+        "cobaltShort": "A custom UI library",
         "repoLink": "Link to the project's repository",
         "otherProjects": "Other projects"
     },

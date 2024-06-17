@@ -6,6 +6,7 @@ import { PageScroller } from "./components/page-scroller";
 import { TechsPage } from "./components/page-techs/index.tsx";
 import { ContactPage } from "./components/page-contact/index.tsx";
 import { ThemeToggle } from "./components/theme-toggle/index.tsx";
+import { ProjectsPage } from "./components/page-projects/index.tsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <PageScroller>
         <IntroPage />
         <AboutPage />
+        <ProjectsPage />
         <TechsPage />
         <ContactPage />
       </PageScroller>
