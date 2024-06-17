@@ -9,9 +9,9 @@ export const Carousel = ({ children, negative }: Props) => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex-grow flex flex-col gap-8">
       <div
-        className="flex gap-8 overflow-x-scroll snap-mandatory snap-x hide-scrollbar"
+        className="flex-grow flex gap-8 overflow-x-scroll snap-mandatory snap-x hide-scrollbar"
         onScroll={(evt) => {
           const target = evt.target as HTMLDivElement;
           const index = Math.round(target.scrollLeft / target.clientWidth);

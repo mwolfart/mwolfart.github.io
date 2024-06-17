@@ -7,7 +7,7 @@ export const Cobalt = () => {
   return (
     <Carousel negative>
       <p>{t("projects.cobalt.one")}</p>
-      <p>{t("projects.cobalt.one")}</p>
+      <p>{t("projects.cobalt.two")}</p>
     </Carousel>
   );
 };
