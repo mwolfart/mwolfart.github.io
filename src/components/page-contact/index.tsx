@@ -12,10 +12,10 @@ const linkClasses =
 export const ContactPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex-grow flex flex-col gap-8">
+    <div className="flex flex-col gap-8">
       <p>{t("contact.getInTouch")}</p>
       <div className="h-[1px] bg-copy w-full" />
-      <div className="flex-grow flex flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <a
           href={githubUrl}
           target="_blank"

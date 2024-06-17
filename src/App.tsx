@@ -18,7 +18,7 @@ function App() {
         <TechsPage />
         <ContactPage />
       </PageScroller>
-      <div className="absolute right-4 bottom-4">
+      <div className="absolute right-10 bottom-10">
         <ThemeToggle />
       </div>
     </div>
