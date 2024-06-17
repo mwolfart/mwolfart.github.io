@@ -16,7 +16,7 @@ export const IntroPage = () => {
       <img
         src="/images/profile_complete.png"
         alt=""
-        className="absolute -bottom-8 -right-28 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end"
+        className="absolute bottom-0 -right-20 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end"
       />
     </div>
   );
