@@ -6,7 +6,7 @@ export const IntroPage = () => {
   return (
     <div className="h-full w-full flex flex-col gap-24 relative">
       {/* <div className="absolute w-64 aspect-square bg-backgroundSecondary rounded-full border border-backgroundSecondary p-4 -z-10" /> */}
-      <div className="flex flex-col gap-2 w-fit pt-16">
+      <div className="flex flex-col gap-2 w-fit pt-6">
         <div className="text-md px-4">{t("home.prefix")}</div>
         <div className="text-primary text-xl font-semibold">
           {t("home.name")}
