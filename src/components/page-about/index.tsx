@@ -5,7 +5,7 @@ export const AboutPage = () => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col flex-grow py-32 px-16 gap-8 [&_span]:text-primary">
-      <h1 className="text-primary">{t("about.title")}</h1>
+      <h1 className="text-primary font-semibold">{t("about.title")}</h1>
       <div className="h-[1px] bg-copy w-full" />
       <div className="flex-grow">
         <Carousel>

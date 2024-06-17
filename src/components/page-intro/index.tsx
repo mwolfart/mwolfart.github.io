@@ -4,10 +4,13 @@ export const IntroPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col pt-32 pb-16 gap-24 overflow-hidden">
+    <div className="flex flex-col pt-32 pb-16 gap-24 overflow-hidden relative">
+      {/* <div className="absolute w-64 aspect-square bg-backgroundSecondary rounded-full border border-backgroundSecondary p-4 -z-10" /> */}
       <div className="flex flex-col gap-2 px-10 w-fit">
         <div className="text-md px-4">{t("home.prefix")}</div>
-        <div className="text-primary text-2xl">{t("home.name")}</div>
+        <div className="text-primary text-2xl font-semibold">
+          {t("home.name")}
+        </div>
         <div className="text-md self-end px-4">{t("home.suffix")}</div>
       </div>
       <img
