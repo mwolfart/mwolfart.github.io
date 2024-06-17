@@ -22,7 +22,11 @@
         "one": "Software developer with <1>7+</1> years of vast experience, having worked with a variety of technologies ranging from <1>NextJS</1> and <1>React</1> to <1>Golang</1> and <1>MongoDB</1>.",
         "two": "I have worked in more than <1>10</1> different projects, ranging from small websites to large-scale applications, and have experience with <1>front-end</1>, <1>back-end</1>, <1>databases</1> and <1>DevOps</1>.",
         "three": "Beyond technical skills, I also have <1>strong communication skills</1> and aptness for engaging in <1>cross-functional teams</1>, working closely with designers, QAs and other developers, often making use of <1>agile</1> practices and frameworks.",
-        "four": "I'm always on the look out for new things to learn and skills to improve, as well as being open for knowledge exchange and tech discussions in general.",
+        "four": "I'm always on the look out for new things to learn and skills to improve, as well as being open for knowledge exchange and tech discussions in general."
+    },
+    "techs": {
+        "title": "Skills",
+        "intro": "Below are some of the technologies I've worked with",
         "yearsOfExperience": "{years}+ years of experience",
         "years": "{years}+ years",
         "proficiencyExcellent": "Excellent skills",

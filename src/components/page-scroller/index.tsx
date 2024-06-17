@@ -14,7 +14,10 @@ export const PageScroller = ({ children }: Props) => {
       </div>
       <div className="h-full overflow-auto snap-mandatory snap-y">
         {children.map((child, idx) => (
-          <div key={idx} className="h-full flex flex-col snap-center">
+          <div
+            key={idx}
+            className="h-full flex flex-col snap-center py-32 px-16"
+          >
             {child}
           </div>
         ))}
