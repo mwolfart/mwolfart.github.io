@@ -21,7 +21,7 @@
 
 .project-pill .content {
   transition: opacity 0.3s, height 0.3s;
-  @apply opacity-0 h-0;
+  @apply opacity-0 h-0 w-full;
 }
 
 .project-pill .description {
@@ -36,6 +36,15 @@
 .project-pill.active .content {
   transition: opacity 0.3s 0.4s, height 0.3s 0.4s;
   @apply flex flex-col gap-4 opacity-100 h-full pb-8;
+}
+
+.project-pill:not(.active) .content button {
+  @apply hidden opacity-0;
+}
+
+.project-pill.active .content button {
+  transition: opacity 0.3s 0.8s;
+  @apply opacity-100;
 }
 
 .project-pill.collapsed {

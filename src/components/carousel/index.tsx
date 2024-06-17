@@ -2,9 +2,10 @@ import { ReactNode, useState } from "react";
 
 type Props = {
   children: ReactNode[];
+  negative?: boolean;
 };
 
-export const Carousel = ({ children }: Props) => {
+export const Carousel = ({ children, negative }: Props) => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
@@ -24,16 +25,24 @@ export const Carousel = ({ children }: Props) => {
         ))}
       </div>
       <div className="flex gap-2 justify-center items-center">
-        <div className="flex-grow h-[1px] bg-copy" />
+        <div
+          className={`flex-grow h-[1px] ${
+            negative ? "bg-background" : "bg-copy"
+          }`}
+        />
         {children.map((_, idx) => (
           <div
             key={idx}
-            className={`h-2 bg-copy flex-grow rounded max-w-6 ${
-              activeItem === idx && "bg-primary"
-            }`}
+            className={`h-2 flex-grow rounded max-w-6 
+              ${activeItem === idx && "bg-primary"}
+              ${negative ? "bg-background" : "bg-copy"}`}
           />
         ))}
-        <div className="flex-grow h-[1px] bg-copy" />
+        <div
+          className={`flex-grow h-[1px] ${
+            negative ? "bg-background" : "bg-copy"
+          }`}
+        />
       </div>
     </div>
   );

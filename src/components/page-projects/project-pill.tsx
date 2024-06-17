@@ -48,7 +48,7 @@ export const ProjectPill = ({
         <div className="flex-grow">{content}</div>
         <button
           onClick={onClose}
-          className="pill bg-primary text-copy py-2 px-4"
+          className="pill bg-primary text-copy py-2 px-4 w-fit"
         >
           {t("projects.back")}
         </button>

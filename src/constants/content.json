@@ -2,16 +2,28 @@
     "projects": {
         "intro": "Check out some of my ",
         "title": "Projects",
-        "emafy": "Emafy",
-        "emafyShort": "A custom spotify wrapper",
-        "emafyLong": "<p>This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists.</p><p>The project was created using primarily React and Styled Components, and the main goal was to learn these frameworks, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome. It was also used to perform a migration from CRA setup to Parcel.</p><p>This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me. The website is deployed at <a href=\"https://mwolfart.github.io/emafy\" target=\"_blank\" rel=\"noreferrer\">Github Pages</a>.</p>",
-        "expensable": "Expensable",
-        "expensableShort": "An online expense management tool",
-        "expensableLong": "<p>This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.</p><p>The project was designed using Remix, Prisma, MongoDB and TailwindCSS. The main goals here were to A) replace a set of spreadsheets I was using to keep track of my expenses and B) learn Remix and acquire a little bit of experience with MongoDB.</p><p>Further instructions on how to use the application can be found in the project ReadMe on its repository in Github.</p><p>An initial version of the app is available at <a href=\"https://expensable.vercel.app/\" target=\"_blank\" rel=\"noreferrer\">Vercel</a></p>",
-        "cobalt": "CobaltUI",
-        "cobaltShort": "A custom UI library",
+        "emafy": {
+            "title": "Emafy",
+            "short": "A custom spotify wrapper",
+            "one": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It was created using primarily React and Styled Components.",
+            "two": "The main goal was to learn the frameworks used, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome.",
+            "three": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
+            "link": "The website is deployed at <1>Github Pages</1>."
+        },
+        "expensable": {
+            "title": "Expensable",
+            "short": "An online expense management tool",
+            "one": "This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.",
+            "two": "The project was designed using Remix, Prisma, MongoDB and TailwindCSS. The main goals here were to A) replace a set of spreadsheets I was using to keep track of my expenses and B) learn and practice with Remix and MongoDB.",
+            "three": "Further instructions on how to use the application can be found in the project ReadMe on its repository in Github.",
+            "link": "An initial version of the app is available at <1>Vercel</1>."
+        },
+        "cobalt": {
+            "title": "CobaltUI",
+            "short": "A custom UI library",
+            "one": "Foo bar baz"
+        },
         "repoLink": "Link to the project's repository",
-        "otherProjects": "Other projects",
         "back": "Back to projects"
     },
     "home": {
