@@ -5,6 +5,7 @@ import { IntroPage } from "./components/page-intro";
 import { PageScroller } from "./components/page-scroller";
 import { TechsPage } from "./components/page-techs/index.tsx";
 import { ContactPage } from "./components/page-contact/index.tsx";
+import { ThemeToggle } from "./components/theme-toggle/index.tsx";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <TechsPage />
         <ContactPage />
       </PageScroller>
+      <div className="absolute right-4 bottom-4">
+        <ThemeToggle />
+      </div>
     </div>
   );
 }
