@@ -4,7 +4,7 @@ export const IntroPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="h-full flex flex-col gap-24 relative">
+    <div className="h-full w-full flex flex-col gap-24 relative">
       {/* <div className="absolute w-64 aspect-square bg-backgroundSecondary rounded-full border border-backgroundSecondary p-4 -z-10" /> */}
       <div className="flex flex-col gap-2 w-fit">
         <div className="text-md px-4">{t("home.prefix")}</div>

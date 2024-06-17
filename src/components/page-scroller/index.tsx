@@ -12,7 +12,7 @@ export const PageScroller = ({ children }: Props) => {
           <div key={idx} className={`w-2 aspect-square rounded-full bg-copy`} />
         ))}
       </div>
-      <div className="h-full overflow-auto snap-mandatory snap-y">
+      <div className="h-full overflow-y-auto overflow-x-hidden snap-mandatory snap-y hide-scrollbar">
         {children.map((child, idx) => (
           <div
             key={idx}
