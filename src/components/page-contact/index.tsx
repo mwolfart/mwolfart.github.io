@@ -7,7 +7,7 @@ const linkedinUrl = "https://www.linkedin.com/in/murilo-wolfart/";
 const email = "mwolfart@gmail.com";
 
 const linkClasses =
-  "no-underline inline-flex gap-4 items-center bg-copy text-background py-4 px-8 rounded-full font-semibold w-fit transition hover:bg-primary";
+  "no-underline inline-flex gap-4 items-center bg-copy text-background py-2 px-4 rounded-full font-semibold w-fit transition hover:bg-primary";
 
 export const ContactPage = () => {
   const { t } = useTranslation();
