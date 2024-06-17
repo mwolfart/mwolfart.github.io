@@ -8,7 +8,7 @@
     --color-background-secondary: #214d8b;
     --color-background-tertiary: #423b6d;
     --color-text: #d1d1d1;
-    --color-primary: #f3c862;
+    --color-primary: #d39912;
     --color-secondary: #aa2d85;
   }
 
@@ -73,6 +73,10 @@
 
   p {
     @apply text-sm md:text-sm;
+  }
+
+  .pill {
+    @apply bg-copy text-background flex gap-4 items-center rounded-full transition hover:bg-primary hover:text-copy;
   }
 }
 

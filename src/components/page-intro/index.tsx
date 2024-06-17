@@ -19,7 +19,7 @@ export const IntroPage = () => {
         className="absolute bottom-8 -right-20 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end"
       />
       <BackgroundShape className="w-96 -left-32 -top-48" />
-      <BackgroundShape className="w-32 -right-8 top-0 border-background-tertiary [&>div]:bg-background-tertiary" />
+      <BackgroundShape className="w-32 left-48 top-0 border-background-tertiary [&>div]:bg-background-tertiary" />
     </div>
   );
 };

@@ -1,0 +1,44 @@
+.project-pill {
+  transition: transform 0.3s 0.3s, height 0.3s, opacity 0.3s 0.3s,
+    background-color 0.3s;
+  @apply bg-copy text-background rounded-3xl px-8 cursor-pointer;
+  @apply flex flex-col items-start;
+  @apply h-24 translate-x-0 opacity-100;
+}
+
+/* 
+.project-pill:not(.active):hover {
+  @apply text-copy bg-primary;
+}
+
+.project-pill:not(.active):hover span {
+  @apply text-copy;
+} */
+
+.project-pill span {
+  @apply transition text-primary;
+}
+
+.project-pill .content {
+  transition: opacity 0.3s, height 0.3s;
+  @apply opacity-0 h-0;
+}
+
+.project-pill .description {
+  @apply flex flex-row gap-4 items-center h-24 min-h-24;
+}
+
+.project-pill.active {
+  transition: height 0.3s 0.4s;
+  @apply cursor-default h-full;
+}
+
+.project-pill.active .content {
+  transition: opacity 0.3s 0.4s, height 0.3s 0.4s;
+  @apply flex flex-col gap-4 opacity-100 h-full pb-8;
+}
+
+.project-pill.collapsed {
+  transition: transform 0.3s, height 0.3s 0.3s, opacity 0.3s;
+  @apply translate-x-full h-0 opacity-0;
+}

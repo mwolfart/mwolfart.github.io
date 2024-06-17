@@ -14,7 +14,8 @@
         "cobalt": "CobaltUI",
         "cobaltShort": "A custom UI library",
         "repoLink": "Link to the project's repository",
-        "otherProjects": "Other projects"
+        "otherProjects": "Other projects",
+        "back": "Back to projects"
     },
     "home": {
         "prefix": "Hey there, I'm",

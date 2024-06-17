@@ -17,7 +17,7 @@ export const TechPill = ({ tech, years, proficiency }: Props) => {
   ];
 
   return (
-    <span className="group relative py-1 px-4 rounded-full bg-copy text-background text-xs font-semibold cursor-default transition hover:bg-primary hover:text-copy">
+    <span className="group relative pill py-1 px-4 text-xs font-semibold cursor-default">
       {tech}
       {(years || proficiency) && (
         <div className="absolute hidden z-10 group-hover:flex flex-col left-0 top-12 h-fit bg-primary text-copy text-2xs z-10 py-1 px-2 rounded-md whitespace-nowrap">
