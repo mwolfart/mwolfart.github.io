@@ -1,8 +1,11 @@
 import { Trans, useTranslation } from "react-i18next";
 import { BackgroundShape } from "../bg-shape";
+import { useMediaQuery } from "react-responsive";
+import { mediaQueries } from "../../constants/breakpoints";
 
 export const IntroPage = () => {
   const { t } = useTranslation();
+  const isScreenXl = useMediaQuery({ query: mediaQueries.xl });
 
   return (
     <div className="h-full w-full flex flex-col gap-24 relative">
@@ -52,7 +55,15 @@ export const IntroPage = () => {
       />
       <BackgroundShape className="w-96 -left-32 -top-48" />
       <BackgroundShape className="w-32 left-48 top-0 border-background-tertiary [&>div]:bg-background-tertiary" />
-      <BackgroundShape className="hidden xl:block w-[48rem] -right-36 -top-[28rem]" />
+      {/* {isScreenXl && (
+        <img
+          src="/images/workspace.jpg"
+          className="hidden xl:block absolute w-[36rem] -right-32 -top-[24rem] object-cover rounded-full aspect-square"
+        />
+      )} */}
+      {isScreenXl && (
+        <BackgroundShape className="hidden xl:block w-[48rem] -right-36 -top-[28rem]" />
+      )}
     </div>
   );
 };
