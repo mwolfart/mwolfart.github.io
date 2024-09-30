@@ -35,10 +35,10 @@ export const ProjectsPage = () => {
 
   return (
     <div className="flex-grow flex flex-col relative max-h-full">
-      <div className="flex-grow flex flex-col gap-8 max-w-6xl">
+      <div className="flex-grow flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <p>{t("projects.intro")}</p>
-          <p className="pl-28 text-primary font-semibold text-2xl">
+          <p className="lg:text-lg">{t("projects.intro")}</p>
+          <p className="pl-28 text-primary font-semibold text-2xl lg:text-3xl">
             {t("projects.title")}
           </p>
         </div>

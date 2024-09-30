@@ -1,9 +1,9 @@
 .project-pill {
   transition: transform 0.3s 0.3s, height 0.3s, opacity 0.3s 0.3s,
     background-color 0.3s;
-  @apply bg-copy text-background rounded-3xl px-8 cursor-pointer;
+  @apply bg-copy text-background rounded-3xl px-8 lg:py-4 cursor-pointer;
   @apply flex flex-col items-start;
-  @apply h-24 translate-x-0 opacity-100;
+  @apply h-24 lg:h-32 translate-x-0 opacity-100;
 }
 
 /* 

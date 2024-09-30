@@ -39,16 +39,16 @@ export const ProjectPill = ({
     <div onClick={onProjectOpen} className={classes.join(" ")}>
       <div className="description">
         {<IconComponent size={32} className="w-8 min-w-8" />}
-        <div className="flex flex-col gap-1">
-          <span className="font-semibold">{title}</span>
-          <p className="text-xs">{description}</p>
+        <div className="flex flex-col gap-1 lg:gap-2">
+          <span className="font-semibold lg:text-lg">{title}</span>
+          <p className="text-xs lg:text-md">{description}</p>
         </div>
       </div>
       <div className="content">
-        <div className="flex-grow flex flex-col">{content}</div>
+        <div className="flex-grow flex flex-col lg:pt-4">{content}</div>
         <button
           onClick={onClose}
-          className="pill bg-primary text-copy py-2 px-4 w-fit"
+          className="pill bg-primary text-copy py-2 px-4 lg:py-4 lg:px-8 w-fit"
         >
           {t("projects.back")}
         </button>
