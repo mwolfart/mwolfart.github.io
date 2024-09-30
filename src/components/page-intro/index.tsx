@@ -52,6 +52,7 @@ export const IntroPage = () => {
       />
       <BackgroundShape className="w-96 -left-32 -top-48" />
       <BackgroundShape className="w-32 left-48 top-0 border-background-tertiary [&>div]:bg-background-tertiary" />
+      <BackgroundShape className="hidden xl:block w-[48rem] -right-36 -top-[28rem]" />
     </div>
   );
 };
