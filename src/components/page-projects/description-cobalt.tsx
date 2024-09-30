@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Carousel } from "../carousel";
 
 export const Cobalt = () => {
   const { t } = useTranslation();
 
   return (
-    <Carousel negative>
+    <div className="flex flex-col gap-4">
       <p>{t("projects.cobalt.one")}</p>
       <p>{t("projects.cobalt.two")}</p>
-    </Carousel>
+    </div>
   );
 };

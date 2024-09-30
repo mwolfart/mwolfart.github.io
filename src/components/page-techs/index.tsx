@@ -10,7 +10,7 @@ export const TechsPage = () => {
   const { t } = useTranslation();
   const isScreenMd = useMediaQuery({ query: mediaQueries.md });
   return (
-    <div className="flex flex-col gap-8 relative flex-grow">
+    <div className="flex flex-col gap-8 relative flex-grow max-w-4xl">
       <p>{t("techs.intro")}</p>
       <div className="flex flex-col flex-grow">
         <Carousel>

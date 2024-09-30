@@ -12,7 +12,7 @@ const linkClasses =
 export const ContactPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 max-w-4xl">
       <p>{t("contact.getInTouch")}</p>
       <div className="h-[1px] bg-copy w-full" />
       <div className="flex flex-col gap-8">
