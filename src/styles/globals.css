@@ -55,6 +55,10 @@
     @apply text-sm md:text-md;
   }
 
+  small {
+    @apply text-2xs;
+  }
+
   ul {
     list-style: inside;
     display: flex;
