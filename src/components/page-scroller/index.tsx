@@ -10,14 +10,20 @@ export const PageScroller = ({ children }: Props) => {
   return (
     <div className="h-full w-full relative">
       <div className="absolute left-4 top-0 bottom-0 flex flex-col justify-center items-center gap-2">
-        {children.map((_, idx) => (
-          <div
-            key={idx}
-            className={`w-2 aspect-square rounded-full bg-copy ${
-              activePage === idx && "bg-primary"
-            }`}
-          />
-        ))}
+        {children.map((child, idx) => {
+          if (child) {
+            return (
+              <div
+                key={idx}
+                className={`w-2 aspect-square rounded-full bg-copy ${
+                  activePage === idx && "bg-primary"
+                }`}
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
       <div
         className="h-full overflow-y-auto overflow-x-hidden snap-mandatory snap-y hide-scrollbar"
@@ -27,14 +33,20 @@ export const PageScroller = ({ children }: Props) => {
           setActivePage(index);
         }}
       >
-        {children.map((child, idx) => (
-          <div
-            key={idx}
-            className="h-full flex flex-col snap-center py-16 px-10"
-          >
-            {child}
-          </div>
-        ))}
+        {children.map((child, idx) => {
+          if (child) {
+            return (
+              <div
+                key={idx}
+                className="h-full flex flex-col snap-center py-16 px-10"
+              >
+                {child}
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
     </div>
   );

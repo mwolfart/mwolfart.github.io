@@ -8,6 +8,8 @@ type Props = {
 export const Carousel = ({ children, negative }: Props) => {
   const [activeItem, setActiveItem] = useState(0);
 
+  const filtered = children.filter((child) => child);
+
   return (
     <div className="flex-grow flex flex-col gap-8">
       <div
@@ -18,32 +20,34 @@ export const Carousel = ({ children, negative }: Props) => {
           setActiveItem(index);
         }}
       >
-        {children.map((child, idx) => (
+        {filtered.map((child, idx) => (
           <div key={idx} className="shrink-0 basis-full snap-center">
             {child}
           </div>
         ))}
       </div>
-      <div className="flex gap-2 justify-center items-center">
-        <div
-          className={`flex-grow h-[1px] ${
-            negative ? "bg-background" : "bg-copy"
-          }`}
-        />
-        {children.map((_, idx) => (
+      {filtered.length > 1 && (
+        <div className="flex gap-2 justify-center items-center">
           <div
-            key={idx}
-            className={`h-2 flex-grow rounded max-w-6 
+            className={`flex-grow h-[1px] ${
+              negative ? "bg-background" : "bg-copy"
+            }`}
+          />
+          {filtered.map((_, idx) => (
+            <div
+              key={idx}
+              className={`h-2 flex-grow rounded max-w-6 
               ${activeItem === idx && "bg-primary"}
               ${negative ? "bg-background" : "bg-copy"}`}
+            />
+          ))}
+          <div
+            className={`flex-grow h-[1px] ${
+              negative ? "bg-background" : "bg-copy"
+            }`}
           />
-        ))}
-        <div
-          className={`flex-grow h-[1px] ${
-            negative ? "bg-background" : "bg-copy"
-          }`}
-        />
-      </div>
+        </div>
+      )}
     </div>
   );
 };

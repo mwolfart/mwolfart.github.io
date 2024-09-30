@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { BackgroundShape } from "../bg-shape";
 
 export const IntroPage = () => {
@@ -6,12 +6,44 @@ export const IntroPage = () => {
 
   return (
     <div className="h-full w-full flex flex-col gap-24 relative">
-      <div className="flex flex-col gap-2 w-fit pt-6">
+      <div className="flex flex-col gap-2 w-fit pt-6 h-full">
         <div className="text-md px-4">{t("home.prefix")}</div>
         <div className="text-primary text-xl font-semibold">
           {t("home.name")}
         </div>
         <div className="text-md self-end px-4">{t("home.suffix")}</div>
+        <div className="hidden lg:block flex-grow w-2/3">
+          <div className="absolute bottom-[10%] right-1/3 flex flex-col gap-8 py-8 border-t border-b border-copy [&_span]:text-primary">
+            <p>
+              <Trans i18nKey="about.one">
+                Software developer with <span>7+</span> years of vast
+                experience, having worked with a variety of technologies ranging
+                from
+                <span>NextJS</span> and <span>React</span> to
+                <span>Golang</span>
+                and <span>MongoDB</span>.
+              </Trans>
+            </p>
+            <p>
+              <Trans i18nKey="about.two">
+                I have worked in more than <span>10</span> different projects,
+                ranging from small websites to large-scale applications, and
+                have experience with <span>front-end</span>,
+                <span>back-end</span>,<span>databases</span> and
+                <span>DevOps</span>.
+              </Trans>
+            </p>
+            <p>
+              <Trans i18nKey="about.three">
+                Beyond technical skills, I also have
+                <span>strong communication skills</span> and aptness for
+                engaging in <span>cross-functional teams</span>, working closely
+                with designers, QAs and other developers, often making use of
+                <span>agile</span> practices and frameworks.
+              </Trans>
+            </p>
+          </div>
+        </div>
       </div>
       <img
         src="/images/profile_complete.png"
