@@ -9,6 +9,7 @@ import { ThemeToggle } from "./components/theme-toggle/index.tsx";
 import { ProjectsPage } from "./components/page-projects/index.tsx";
 import { useMediaQuery } from "react-responsive";
 import { mediaQueries } from "./constants/breakpoints.ts";
+import { LanguageToggle } from "./components/language-toggle/index.tsx";
 
 function App() {
   const isScreenXl = useMediaQuery({ query: mediaQueries.xl });
@@ -21,7 +22,8 @@ function App() {
         <TechsPage />
         <ContactPage />
       </PageScroller>
-      <div className="absolute right-4 bottom-4">
+      <div className="absolute right-4 bottom-4 flex gap-4">
+        <LanguageToggle />
         <ThemeToggle />
       </div>
     </div>
