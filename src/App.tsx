@@ -13,7 +13,7 @@ import { mediaQueries } from "./constants/breakpoints.ts";
 function App() {
   const isScreenXl = useMediaQuery({ query: mediaQueries.xl });
   return (
-    <div className="h-screen">
+    <div className="h-dvh">
       <PageScroller>
         <IntroPage />
         {!isScreenXl && <AboutPage />}
