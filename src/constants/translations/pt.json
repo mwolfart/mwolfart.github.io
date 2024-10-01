@@ -1,0 +1,59 @@
+{
+    "projects": {
+        "intro": "Check out some of my ",
+        "title": "Projects",
+        "emafy": {
+            "title": "Emafy",
+            "short": "A custom spotify wrapper",
+            "one": "This is a custom wrapper for Spotify, which can be used to visualize and play songs, artists, albums and playlists. It was created using primarily React and Styled Components.",
+            "two": "The main goal was to learn the frameworks used, improve my skills with them, and study front-end concepts. Furthermore, it was used to experiment with multiple React libraries, such as infinite scroll, jest, and font awesome.",
+            "three": "This project was first created with the help of Afonso Ferrer, a coworker of mine, and later on maintained by me.",
+            "link": "The website is deployed at <1>Github Pages</1>."
+        },
+        "expensable": {
+            "title": "Expensable",
+            "short": "An online expense management tool",
+            "one": "This is an online tool created to manage expenses and savings. The user can log all of their daily expenses, assign them to custom categories and view a monthly or periodic dashboard in order to keep track of financial goals.",
+            "two": "The project was designed using Remix, Prisma, MongoDB and TailwindCSS. The main goals here were to A) replace a set of spreadsheets I was using to keep track of my expenses and B) learn and practice with Remix and MongoDB.",
+            "three": "Further instructions on how to use the application can be found in the project ReadMe on its repository in Github.",
+            "link": "An initial version of the app is available at <1>Vercel</1>."
+        },
+        "cobalt": {
+            "title": "CobaltUI",
+            "short": "A custom UI library",
+            "one": "This is a currently in progress project, where the goal is to create a custom UI library to be used in future projects.",
+            "two": "The component library is built using React and CSS Modules, along with Storybook to visualize and test the components. More details will be available soon."
+        },
+        "repoLink": "Link to the project's repository",
+        "back": "Back to projects"
+    },
+    "home": {
+        "prefix": "Hey there, I'm",
+        "name": "Murilo Wolfart",
+        "suffix": "Full-stack developer"
+    },
+    "about": {
+        "title": "About me",
+        "one": "Software developer with <1>7+</1> years of vast experience, having worked with a variety of technologies ranging from <1>NextJS</1> and <1>React</1> to <1>Golang</1> and <1>MongoDB</1>.",
+        "two": "I have worked in more than <1>10</1> different projects, ranging from small websites to large-scale applications, and have experience with <1>front-end</1>, <1>back-end</1>, <1>databases</1> and <1>DevOps</1>.",
+        "three": "Beyond technical skills, I also have <1>strong communication skills</1> and aptness for engaging in <1>cross-functional teams</1>, working closely with designers, QAs and other developers, often making use of <1>agile</1> practices and frameworks.",
+        "four": "I'm always on the look out for new things to learn and skills to improve, as well as being open for knowledge exchange and tech discussions in general."
+    },
+    "techs": {
+        "title": "Skills",
+        "intro": "Below are some of the technologies I've worked with",
+        "yearsOfExperience": "{years}+ years of experience",
+        "years": "{{years}}+ years",
+        "proficiencyExcellent": "Excellent skills",
+        "proficiencyVeryGood": "Very good skills",
+        "proficiencyGood": "Good skills",
+        "proficiencyModerate": "Moderate skills",
+        "proficiencyBasic": "Basic skills"
+    },
+    "contact": {
+        "getInTouch": "Get in touch with me!",
+        "email": "Send me an e-mail",
+        "linkedin": "LinkedIn profile",
+        "github": "Github profile"
+    }
+}
