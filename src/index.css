@@ -83,11 +83,11 @@
 @font-face {
   font-family: OpenSans;
   font-style: normal;
-  src: url("font/opensans.ttf");
+  src: url("/font/opensans.ttf");
 }
 
 @font-face {
   font-family: OpenSans;
   font-style: italic;
-  src: url("font/opensans-italic.ttf");
+  src: url("/font/opensans-italic.ttf");
 }
