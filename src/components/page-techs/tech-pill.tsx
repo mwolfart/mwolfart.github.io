@@ -16,6 +16,12 @@ export const TechPill = ({ tech, years, proficiency }: Props) => {
     t("techs.proficiencyExcellent"),
   ];
 
+  const pillClasses = [
+    "group relative pill py-1 px-4 text-xs font-semibold cursor-default",
+    "focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-2",
+    "lg:py-4 lg:px-8 lg:text-md",
+  ];
+
   const tooltipClasses = [
     "absolute hidden z-10 group-hover:flex flex-col left-0 top-12 h-fit",
     "bg-primary text-copy text-2xs z-10 py-1 px-2 rounded-md whitespace-nowrap",
@@ -23,7 +29,7 @@ export const TechPill = ({ tech, years, proficiency }: Props) => {
   ];
 
   return (
-    <span className="group relative pill py-1 px-4 text-xs font-semibold cursor-default lg:py-4 lg:px-8 lg:text-md">
+    <span className={pillClasses.join(" ")} tabIndex={0}>
       {tech}
       {(years || proficiency) && (
         <div className={tooltipClasses.join(" ")}>

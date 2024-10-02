@@ -6,6 +6,10 @@
   @apply h-24 lg:h-32 translate-x-0 opacity-100;
 }
 
+.project-pill:focus {
+  outline: 2px solid var(--color-primary);
+}
+
 /* 
 .project-pill:not(.active):hover {
   @apply text-copy bg-primary;
@@ -21,7 +25,12 @@
 
 .project-pill .content {
   transition: opacity 0.3s, height 0.3s;
+  pointer-events: none;
   @apply opacity-0 h-0 w-full;
+}
+
+.project-pill .content a {
+  display: none;
 }
 
 .project-pill .description {
@@ -34,8 +43,13 @@
 }
 
 .project-pill.active .content {
+  pointer-events: all;
   transition: opacity 0.3s 0.4s, height 0.3s 0.4s;
   @apply flex flex-col gap-4 opacity-100 h-full pb-8;
+}
+
+.project-pill.active .content a {
+  display: inline-block;
 }
 
 .project-pill:not(.active) .content button {
