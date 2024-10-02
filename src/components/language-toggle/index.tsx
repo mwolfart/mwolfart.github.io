@@ -36,12 +36,14 @@ export const LanguageToggle = () => {
         <button
           onClick={() => i18n.changeLanguage("en-US")}
           className="h-10 cursor-pointer"
+          tabIndex={expanded ? 0 : -1}
         >
           EN
         </button>
         <button
           onClick={() => i18n.changeLanguage("pt-BR")}
           className="h-10 cursor-pointer"
+          tabIndex={expanded ? 0 : -1}
         >
           PT
         </button>

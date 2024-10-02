@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
 
   return (
     <button
-      className="relative rounded-full w-20 bg-copy text-background h-10 cursor-pointer"
+      className="relative rounded-full w-20 bg-copy text-background h-10 cursor-pointer focus:outline focus:outline-2 focus:outline-copy focus:outline-offset-2"
       onClick={() => {
         setDark(!isDark);
       }}
