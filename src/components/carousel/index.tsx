@@ -10,6 +10,8 @@ export const Carousel = ({ children, negative }: Props) => {
 
   const filtered = children.filter((child) => child);
 
+  console.log(filtered.length);
+
   return (
     <div className="flex-grow flex flex-col gap-8">
       <div
