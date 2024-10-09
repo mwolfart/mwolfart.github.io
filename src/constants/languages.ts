@@ -7,6 +7,6 @@ export const getLanguageLabel = (language: string) => {
     case "pt-BR":
       return "PT";
     default:
-      return language;
+      return "EN";
   }
 };
