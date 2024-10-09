@@ -13,7 +13,7 @@
         "expensable": {
             "title": "Expensable",
             "short": "Uma ferramenta online de gerenciamento de despesas",
-            "one": "Esta é uma ferramenta online criada para gerenciar despesas e economias. O usuário pode registrar todas as suas despesas diárias, atribuí-las a categorias personalizadas e visualizar um painel mensal ou periódico para acompanhar suas metas financeiras.",
+            "one": "Ferramenta online criada para gerenciar despesas e economias. O usuário pode registrar todas as suas despesas diárias, atribuí-las a categorias personalizadas e visualizar um painel mensal ou periódico para acompanhar metas financeiras.",
             "two": "O projeto foi desenvolvido usando Remix, Prisma, MongoDB e TailwindCSS. Os principais objetivos aqui eram A) substituir um conjunto de planilhas que eu usava para acompanhar minhas despesas e B) aprender e praticar com Remix e MongoDB.",
             "three": "Mais instruções sobre como usar a aplicação podem ser encontradas no ReadMe do projeto em seu repositório no Github.",
             "link": "Uma versão inicial do app está disponível em <1>Vercel</1>."
@@ -41,7 +41,7 @@
     },
     "techs": {
         "title": "Habilidades",
-        "intro": "Abaixo estão algumas das tecnologias com as quais trabalhei",
+        "intro": "Abaixo estão algumas tecnologias com as quais trabalhei",
         "yearsOfExperience": "{years}+ anos de experiência",
         "years": "{{years}}+ anos",
         "proficiencyExcellent": "Excelentes habilidades",
