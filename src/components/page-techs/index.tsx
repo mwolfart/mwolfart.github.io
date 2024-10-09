@@ -11,7 +11,7 @@ export const TechsPage = () => {
   const { t } = useTranslation();
   const isScreenLg = useMediaQuery({ query: mediaQueries.md });
 
-  const techsPerPageInMobile = 6;
+  const techsPerPageInMobile = 5;
   const mobileControlArray = Array.from({
     length: Math.ceil(technologies.length / techsPerPageInMobile),
   });
