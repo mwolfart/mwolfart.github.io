@@ -9,7 +9,8 @@ import { MobileTechPill } from "./tech-mobile-pill";
 
 export const TechsPage = () => {
   const { t } = useTranslation();
-  const isScreenLg = useMediaQuery({ query: mediaQueries.md });
+
+  const isScreenMd = useMediaQuery({ query: mediaQueries.md });
 
   const techsPerPageInMobile = 5;
   const mobileControlArray = Array.from({
@@ -17,10 +18,10 @@ export const TechsPage = () => {
   });
 
   return (
-    <div className="flex flex-col gap-8 relative flex-grow">
+    <div className="flex flex-col gap-4 md:gap-8 relative flex-grow">
       <p className="lg:text-xl">{t("techs.intro")}</p>
-      <div className="flex flex-col flex-grow">
-        {isScreenLg ? (
+      <div className="flex flex-col">
+        {isScreenMd ? (
           <div className="flex flex-wrap gap-4 &>*:w-fit">
             {technologies.map(({ name, years, proficiency }, idx) => (
               <TechPill

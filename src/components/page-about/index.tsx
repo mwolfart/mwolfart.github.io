@@ -43,7 +43,7 @@ export const AboutPage = () => {
     <div className="flex flex-col flex-grow gap-8 [&_span]:text-primary relative">
       <h1 className="text-primary font-semibold">{t("about.title")}</h1>
       <div className="h-[1px] bg-copy w-full" />
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow pb-12 lg:pb-0">
         <Carousel>
           <div className="flex flex-col gap-4">
             {isScreenMd ? paragraphs : paragraphs.slice(0, 2)}

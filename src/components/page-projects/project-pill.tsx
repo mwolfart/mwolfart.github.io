@@ -52,7 +52,7 @@ export const ProjectPill = ({
       <div className="description">
         {<IconComponent size={32} className="w-8 min-w-8" />}
         <div className="flex flex-col gap-1 lg:gap-2">
-          <span className="font-semibold lg:text-lg">{title}</span>
+          <span className="font-semibold text-sm lg:text-lg">{title}</span>
           <p className="text-xs lg:text-md">{description}</p>
         </div>
       </div>

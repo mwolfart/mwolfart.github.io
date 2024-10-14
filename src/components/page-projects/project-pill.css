@@ -33,6 +33,10 @@
   display: none;
 }
 
+.project-pill .content p {
+  @apply text-xs lg:text-md;
+}
+
 .project-pill .description {
   @apply flex flex-row gap-4 items-center h-24 min-h-24;
 }

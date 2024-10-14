@@ -18,10 +18,10 @@ export const MobileTechPill = ({ tech, years, proficiency }: Props) => {
 
   return (
     <span
-      className="bg-copy rounded-xl text-background p-4 text-sm font-semibold flex flex-row gap-4 justify-between h-[5rem]"
+      className="bg-copy rounded-xl text-background p-4 text-sm font-semibold flex flex-row gap-4 justify-between h-[4.5rem]"
       tabIndex={0}
     >
-      <p className="flex-grow">{tech}</p>
+      <p className="flex-grow text-xs">{tech}</p>
       {(years || proficiency) && (
         <div className="flex flex-col gap-2 justify-between text-right text-2xs leading-4">
           {years && (
