@@ -55,5 +55,11 @@
         "email": "Envie-me um e-mail",
         "linkedin": "Perfil do LinkedIn",
         "github": "Perfil do Github"
+    },
+    "change-theme": "Trocar tema",
+    "language": {
+        "change": "Trocar idioma",
+        "en": "Inglês",
+        "pt": "Portuguës"
     }
 }

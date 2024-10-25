@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 export const ThemeToggle = () => {
@@ -6,6 +7,7 @@ export const ThemeToggle = () => {
     typeof window !== "undefined" &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [isDark, setDark] = useState(prefersDark ?? false);
+  const { t } = useTranslation();
 
   const breadcrumbStyle = `absolute h-[90%] top-[1.5px] left-[2px] transition bg-background aspect-square rounded-full ${
     isDark ? "translate-x-0" : "translate-x-10"
@@ -28,6 +30,7 @@ export const ThemeToggle = () => {
   return (
     <button
       className="relative rounded-full w-20 bg-copy text-background h-10 cursor-pointer focus:outline focus:outline-2 focus:outline-copy focus:outline-offset-2"
+      aria-label={t("change-theme")}
       onClick={() => {
         setDark(!isDark);
       }}

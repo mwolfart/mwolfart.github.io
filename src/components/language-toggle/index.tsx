@@ -4,7 +4,7 @@ import { getLanguageLabel } from "../../constants/languages";
 
 export const LanguageToggle = () => {
   const [expanded, setExpanded] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const browserLanguage =
     typeof navigator !== "undefined" &&
@@ -30,6 +30,7 @@ export const LanguageToggle = () => {
       onClick={() => {
         setExpanded(!expanded);
       }}
+      aria-label={t("language.change")}
     >
       {getLanguageLabel(i18n.language)}
       <div className={menuClasses.join(" ")}>
@@ -37,6 +38,7 @@ export const LanguageToggle = () => {
           onClick={() => i18n.changeLanguage("en-US")}
           className="h-10 cursor-pointer"
           tabIndex={expanded ? 0 : -1}
+          aria-label={t("language.english")}
         >
           EN
         </button>
@@ -44,6 +46,7 @@ export const LanguageToggle = () => {
           onClick={() => i18n.changeLanguage("pt-BR")}
           className="h-10 cursor-pointer"
           tabIndex={expanded ? 0 : -1}
+          aria-label={t("language.portuguese")}
         >
           PT
         </button>
