@@ -38,9 +38,9 @@ export const ProjectsPage = () => {
       <div className="flex-grow flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <p className="lg:text-lg">{t("projects.intro")}</p>
-          <p className="pl-28 text-primary font-semibold text-2xl lg:text-3xl">
+          <h2 className="pl-28 text-primary font-semibold text-2xl lg:text-3xl">
             {t("projects.title")}
-          </p>
+          </h2>
         </div>
         <div className="flex-grow flex flex-col gap-4">
           {projects.map(

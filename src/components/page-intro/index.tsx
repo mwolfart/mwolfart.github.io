@@ -10,13 +10,11 @@ export const IntroPage = () => {
   return (
     <div className="h-full w-full flex flex-col gap-24 relative">
       <div className="flex flex-col gap-2 w-fit pt-6 h-full">
-        <div className="text-md px-4 lg:text-xl">{t("home.prefix")}</div>
-        <div className="text-primary text-xl font-semibold lg:text-3xl">
+        <p className="text-md px-4 lg:text-xl">{t("home.prefix")}</p>
+        <h1 className="text-primary text-xl font-semibold lg:text-3xl">
           {t("home.name")}
-        </div>
-        <div className="text-md self-end px-4 lg:text-xl">
-          {t("home.suffix")}
-        </div>
+        </h1>
+        <p className="text-md self-end px-4 lg:text-xl">{t("home.suffix")}</p>
         <div className="hidden lg:block flex-grow w-2/3">
           <div className="absolute bottom-[10%] right-1/3 flex flex-col gap-8 py-8 border-t border-b border-copy [&_span]:text-primary">
             <p>
