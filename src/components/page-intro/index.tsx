@@ -51,6 +51,7 @@ export const IntroPage = () => {
       <img
         src="/images/profile_complete.webp"
         alt=""
+        aria-hidden
         className="absolute bottom-8 -right-20 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end"
       />
       <BackgroundShape className="w-96 -left-32 -top-48" />
