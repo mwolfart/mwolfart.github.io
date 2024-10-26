@@ -21,8 +21,8 @@
         "cobalt": {
             "title": "CobaltUI",
             "short": "Uma biblioteca de UI personalizada",
-            "one": "Este é um projeto em andamento, onde o objetivo é criar uma biblioteca de UI personalizada a ser usada em projetos futuros.",
-            "two": "A biblioteca de componentes é construída usando React e CSS Modules, juntamente com Storybook para visualizar e testar os componentes. Mais detalhes estarão disponíveis em breve."
+            "one": "Esta é uma biblioteca de componentes simples desenvolvida utilizando o modo biblioteca do Vite e Storybook para visualização. Ela contém alguns componentes básicos como botões, inpus e labels.",
+            "two": "A biblioteca está publicamente disponível no registro npm sob o identificador de @mwolfart/cobalt-ui e o Storybook está disponível em <1>Github Pages</1>."
         },
         "repoLink": "Link para o repositório do projeto",
         "back": "Voltar para projetos"

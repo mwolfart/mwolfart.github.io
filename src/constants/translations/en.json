@@ -21,8 +21,8 @@
         "cobalt": {
             "title": "CobaltUI",
             "short": "A custom UI library",
-            "one": "This is a currently in progress project, where the goal is to create a custom UI library to be used in future projects.",
-            "two": "The component library is built using React and CSS Modules, along with Storybook to visualize and test the components. More details will be available soon."
+            "one": "This is a simple component library developed using Vite's library mode and Storybook for component visualization. It contains a few basic components, such as buttons, inputs and labels.",
+            "two": "The component library is publicly deployed to npm registry under the identifier of @mwolfart/cobalt-ui and the storybook is avilable at <1>Github Pages</1>."
         },
         "repoLink": "Link to the project's repository",
         "back": "Back to projects"
