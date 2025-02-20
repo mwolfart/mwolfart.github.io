@@ -30,12 +30,12 @@
     "home": {
         "prefix": "Olá, eu sou",
         "name": "Murilo Wolfart",
-        "suffix": "Desenvolvedor full-stack"
+        "suffix": "Desenvolvedor frontend"
     },
     "about": {
         "title": "Sobre mim",
-        "one": "Desenvolvedor de software com <1>7+</1> anos de vasta experiência, tendo trabalhado com uma variedade de tecnologias que vão de <1>NextJS</1> e <1>React</1> até <1>Golang</1> e <1>MongoDB</1>.",
-        "two": "Trabalhei em mais de <1>10</1> projetos diferentes, que vão de pequenos sites a aplicações de grande escala, e tenho experiência com <1>front-end</1>, <1>back-end</1>, <1>bancos de dados</1> e <1>DevOps</1>.",
+        "one": "Desenvolvedor frontend com <1>7+</1> anos de vasta experiência, tendo trabalhado com uma variedade de tecnologias incluindo <1>NextJS</1>, <1>React</1>, <1>Styled Components</1> e <1>Storybook</1>.",
+        "two": "Trabalhei em mais de <1>10</1> projetos diferentes, que vão de pequenos sites a aplicações de grande escala, e tenho experiência não somente com <1>front-end</1>, mas também com <1>back-end</1>.",
         "three": "Além das habilidades técnicas, também possuo <1>fortes habilidades de comunicação</1> e aptidão para participar de <1>equipes multifuncionais</1>, trabalhando em estreita colaboração com designers, QAs e outros desenvolvedores, frequentemente utilizando práticas e frameworks <1>ágeis</1>.",
         "four": "Estou sempre em busca de novas coisas para aprender e habilidades para melhorar, além de estar aberto a trocas de conhecimento e discussões técnicas em geral."
     },
