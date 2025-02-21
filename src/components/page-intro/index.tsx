@@ -2,19 +2,35 @@ import { Trans, useTranslation } from "react-i18next";
 import { BackgroundShape } from "../bg-shape";
 import { useMediaQuery } from "react-responsive";
 import { mediaQueries } from "../../constants/breakpoints";
+import { useEffect, useState } from "react";
+import "./page-intro.css";
 
 export const IntroPage = () => {
   const { t } = useTranslation();
   const isScreenXl = useMediaQuery({ query: mediaQueries.xl });
 
+  const [transitionStarted, setTransitionStarted] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTransitionStarted(true);
+    });
+  }, []);
+
   return (
     <div className="h-full w-full flex flex-col gap-24 relative">
-      <div className="flex flex-col gap-2 w-fit pt-6 h-full">
+      <div
+        className={["flex flex-col gap-2 pt-6 h-full text-init"]
+          .concat(transitionStarted ? "text-animate" : "text-hide")
+          .join(" ")}
+      >
         <p className="text-md px-4 lg:text-xl">{t("home.prefix")}</p>
         <h1 className="text-primary text-xl font-semibold lg:text-3xl">
           {t("home.name")}
         </h1>
-        <p className="text-md self-end px-4 lg:text-xl">{t("home.suffix")}</p>
+        <p className="text-md md:translate-x-16 lg:translate-x-32 px-4 lg:text-xl">
+          {t("home.suffix")}
+        </p>
         <div className="hidden lg:block flex-grow w-2/3">
           <div className="absolute bottom-[10%] right-1/3 flex flex-col gap-8 py-8 border-t border-b border-copy [&_span]:text-primary">
             <p>
@@ -49,7 +65,11 @@ export const IntroPage = () => {
         src="/images/profile_complete.webp"
         alt=""
         aria-hidden
-        className="absolute bottom-8 -right-20 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end"
+        className={[
+          "absolute bottom-8 -right-20 w-96 aspect-square p-4 border border-primary overflow-auto object-cover object-[0_-45px] rounded-full self-end img-init",
+        ]
+          .concat(transitionStarted ? "img-show" : "img-hide")
+          .join(" ")}
       />
       <BackgroundShape className="w-96 -left-32 -top-48" />
       <BackgroundShape className="w-32 left-48 top-0 border-background-tertiary [&>div]:bg-background-tertiary" />
