@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 const About = () => {
   const { t } = useTranslation();
@@ -9,25 +9,29 @@ const About = () => {
       
       <div className="space-y-6 text-lg text-[var(--color-text-secondary)]">
         <p>
-          {t('about.description')}
+          <Trans i18nKey="about.one">
+            <span className="text-[var(--color-accent)]">▹</span>
+            <span className="text-[var(--color-accent)]">▹</span>
+          </Trans>
         </p>
         <p>
-          Since beginning my journey as a developer, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+          <Trans i18nKey="about.two">
+            <span className="text-[var(--color-accent)]">▹</span>
+            <span className="text-[var(--color-accent)]">▹</span>
+          </Trans>
         </p>
         <p>
-          I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+          <Trans i18nKey="about.three">
+            <span className="text-[var(--color-accent)]">▹</span>
+            <span className="text-[var(--color-accent)]">▹</span>
+          </Trans>
         </p>
-      </div>
-
-      <div className="mt-16">
-        <h2 className="text-2xl font-bold text-white mb-6">Skills & Technologies</h2>
-        <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 font-mono text-sm">
-          {['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Next.js', 'Vite', 'HTML & CSS', 'Git'].map((skill) => (
-            <li key={skill} className="flex items-center gap-2">
-              <span className="text-[var(--color-accent)]">▹</span> {skill}
-            </li>
-          ))}
-        </ul>
+        <p>
+          <Trans i18nKey="about.four">
+            <span className="text-[var(--color-accent)]">▹</span>
+            <span className="text-[var(--color-accent)]">▹</span>
+          </Trans>
+        </p>
       </div>
     </div>
   );

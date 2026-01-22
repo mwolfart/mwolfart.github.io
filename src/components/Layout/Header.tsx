@@ -13,11 +13,10 @@ const Header = () => {
     { path: '/about', label: t('nav.about') },
     { path: '/projects', label: t('nav.projects') },
     { path: '/tech', label: t('nav.tech') },
-    { path: '/contact', label: t('nav.contact') },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-panel border-b-0 rounded-none border-b border-[var(--glass-border)]">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-panel-header border-b border-[var(--glass-border)]">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="text-xl font-bold font-mono tracking-tighter">
           MW<span className="text-[var(--color-accent)]">.</span>

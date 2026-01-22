@@ -8,22 +8,31 @@ const Projects = () => {
   // This would ideally come from a CMS or JSON file
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "You are looking at it! A fully internationalized personal portfolio built with React, Vite, and Vanilla CSS.",
+      title: t('projects.portfolio.title'),
+      description: t('projects.portfolio.description'),
       tags: ["React", "TypeScript", "Vite", "i18n", "CSS"],
-      link: "https://github.com/mwolfart/mwolfart.github.io"
+      github: "https://github.com/mwolfart/mwolfart.github.io"
     },
     {
-      title: "Task Master",
-      description: "A productivity application for managing daily tasks and workflows with team collaboration features.",
-      tags: ["Next.js", "Node.js", "Prisma", "PostgreSQL"],
-      link: "#"
+      title: t('projects.emafy.title'),
+      description: t('projects.emafy.description'),
+      tags: ["React", "TypeScript", "CRA", "Styled Components", "Jest", "RTL"],
+      link: "https://mwolfart.github.io/emafy",
+      github: "https://github.com/mwolfart/emafy"
     },
     {
-      title: "E-Commerce Dashboard",
-      description: "Admin dashboard for an e-commerce platform with real-time analytics and inventory management.",
-      tags: ["Vue.js", "Firebase", "Tailwind CSS"], // Mentioning Tailwind as a skill used in past, even if not here
-      link: "#"
+      title: t('projects.expensable.title'),
+      description: t('projects.expensable.description'),
+      tags: ["React", "Remix", "Tailwind", "Prisma", "MongoDB", "Recharts", "Formik"],
+      link: "https://expensable.vercel.app/",
+      github: "https://github.com/mwolfart/expensable-web"
+    },
+    {
+      title: t('projects.cobaltui.title'),
+      description: t('projects.cobaltui.description'),
+      tags: ["React", "Storybook", "Vite", "Typescript"],
+      link: "https://mwolfart.github.io/cobalt-ui",
+      github: "https://github.com/mwolfart/cobalt-ui"
     }
   ];
 
@@ -39,10 +48,14 @@ const Projects = () => {
             description={project.description}
             tags={project.tags}
             link={project.link}
-            icon={<FaExternalLinkAlt className="text-xl opacity-50" />}
+            icon={project.link && <FaExternalLinkAlt className="text-xl opacity-50" />}
             footer={
               <div className="flex justify-end">
-                <FaGithub className="text-xl hover:text-white transition-colors" />
+                {project.github && (
+                  <a className="text-white hover:text-[var(--color-accent)] transition-colors" href={project.github} target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="text-xl" />
+                  </a>
+                )}
               </div>
             }
           />

@@ -4,7 +4,6 @@ import Hero from './components/Sections/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import TechStack from './pages/TechStack';
-import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="tech" element={<TechStack />} />
-          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>
