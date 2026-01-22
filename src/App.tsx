@@ -4,6 +4,7 @@ import Hero from './components/Sections/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import TechStack from './pages/TechStack';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="tech" element={<TechStack />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

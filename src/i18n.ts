@@ -62,6 +62,11 @@ const resources = {
       "contact": {
         "title": "Get in Touch",
         "email": "Email me"
+      },
+      "not_found": {
+        "title": "Page Not Found",
+        "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "button": "Go Home"
       }
     }
   },
@@ -124,6 +129,11 @@ const resources = {
       "contact": {
         "title": "Entre em Contato",
         "email": "Envie um email"
+      },
+      "not_found": {
+        "title": "Página Não Encontrada",
+        "description": "A página que você está procurando pode ter sido removida, ter tido seu nome alterado ou estar temporariamente indisponível.",
+        "button": "Ir para o Início"
       }
     }
   }
