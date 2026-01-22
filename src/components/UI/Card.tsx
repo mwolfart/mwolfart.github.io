@@ -42,9 +42,10 @@ const Card: React.FC<CardProps> = ({ title, description, tags, link, icon, foote
 
   if (link) {
     return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full group">
+      <div className="block h-full group relative">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 cursor-pointer z-10"></a>
         <Content />
-      </a>
+      </div>
     );
   }
 

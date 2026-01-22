@@ -65,7 +65,7 @@ const TechStack = () => {
   const categories = ["frontend", "backend", "tools"];
 
   return (
-    <div className="animate-fade-in py-8">
+    <div className="animate-fade-in py-4 md:py-12">
       <h1 className="section-title text-center block mx-auto mb-16">{t('tech.title')}</h1>
 
       <div className="space-y-16">
@@ -78,7 +78,7 @@ const TechStack = () => {
               {technologies.filter(tech => tech.category === category).map(tech => (
                 <div 
                   key={tech.name}
-                  className="p-3 rounded-lg bg-[var(--color-bg-secondary)] border border-[rgba(255,255,255,0.05)] hover:border-[var(--color-accent)] hover:bg-[rgba(255,255,255,0.03)] transition-colors group"
+                  className="p-3 w-full xs:w-auto rounded-lg bg-[var(--color-bg-secondary)] border border-[rgba(255,255,255,0.05)] hover:border-[var(--color-accent)] hover:bg-[rgba(255,255,255,0.03)] transition-colors group"
                 >
                   <h3 className="text-base font-bold text-white group-hover:text-[var(--color-accent)] transition-colors mb-1">
                     {tech.name}

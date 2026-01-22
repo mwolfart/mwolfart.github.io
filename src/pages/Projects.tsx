@@ -37,7 +37,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="animate-fade-in py-12">
+    <div className="animate-fade-in py-4 md:py-12">
       <h1 className="section-title text-center block mx-auto mb-16">{t('projects.title')}</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

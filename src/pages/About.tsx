@@ -4,7 +4,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-3xl mx-auto animate-fade-in py-12">
+    <div className="max-w-3xl mx-auto animate-fade-in py-4 md:py-12">
       <h1 className="section-title mb-12">{t('about.title')}</h1>
       
       <div className="space-y-6 text-lg text-[var(--color-text-secondary)]">
